@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Perhitungan — Stuntor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage-50: #f4f7f3; --sage-100: #e6ece4; --sage-200: #ccd9c7;
+            --sage-300: #a8bda1; --sage-400: #7d9a77; --sage-500: #5c7d58;
+            --sage-600: #476244; --sage-700: #384f37; --sage-800: #2d3f2d;
+            --sage-900: #1f2b1f; --cream: #fafaf7; --ink: #1a1f1a;
+            --success: #5a8a56; --critical: #a53f3f;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: var(--font-body); color: var(--ink); background: var(--cream); line-height: 1.5; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+        nav {
+            position: sticky; top: 0; z-index: 100; padding: 18px 48px;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(250, 250, 247, 0.9); backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: var(--sage-800); text-decoration: none; }
+        .logo-mark { width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg, var(--sage-500), var(--sage-700)); display: flex; align-items: center; justify-content: center; color: white; font-size: 13px; font-weight: 700; }
+        .nav-actions { display: flex; gap: 10px; align-items: center; }
+        .nav-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 9px 16px; border-radius: 100px; text-decoration: none;
+            font-size: 13px; font-weight: 600; transition: all 0.2s;
+        }
+        .nav-btn.ghost { color: var(--sage-700); border: 1px solid var(--sage-200); background: white; }
+        .nav-btn.ghost:hover { background: var(--sage-100); border-color: var(--sage-300); }
+        .nav-btn.solid { background: var(--sage-800); color: white; }
+        .nav-btn.solid:hover { background: var(--sage-900); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 48px 48px 80px; }
+
+        .header { margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid var(--sage-100); }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 12px; background: var(--sage-100); border-radius: 100px;
+            font-size: 11px; font-weight: 600; color: var(--sage-700); letter-spacing: 0.04em;
+            margin-bottom: 16px; text-transform: uppercase;
+        }
+        .eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage-500); }
+        .header h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(34px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em; color: var(--sage-900); margin-bottom: 10px; }
+        .header h1 em { font-style: italic; color: var(--sage-600); font-weight: 300; }
+        .header p { font-size: 15px; color: var(--sage-700); }
+
+        .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+        .stat-card { background: white; border: 1px solid var(--sage-100); border-radius: 16px; padding: 20px; }
+        .stat-card .l { font-size: 11px; font-weight: 600; color: var(--sage-600); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+        .stat-card .v { font-family: var(--font-display); font-size: 30px; font-weight: 500; color: var(--sage-900); line-height: 1; letter-spacing: -0.02em; }
+
+        .table-wrap { background: white; border: 1px solid var(--sage-100); border-radius: 20px; overflow: hidden; }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1100px; }
+        thead { background: var(--sage-50); }
+        th { padding: 16px 14px; text-align: left; font-size: 11px; font-weight: 600; color: var(--sage-700); text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--sage-100); white-space: nowrap; }
+        td { padding: 14px; border-bottom: 1px solid var(--sage-50); color: var(--sage-800); vertical-align: middle; white-space: nowrap; }
+        tbody tr:hover { background: var(--sage-50); }
+        tbody tr:last-child td { border-bottom: none; }
+
+        .badge-small { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+        .badge-small.normal { background: var(--sage-100); color: var(--sage-700); }
+        .badge-small.stunting { background: #fde8e8; color: var(--critical); }
+        .badge-small.low { background: #fdf6e3; color: #8b6b1f; }
+        .badge-small.medium { background: #fee8d8; color: #b15a1a; }
+        .badge-small.high { background: #fde0e0; color: var(--critical); }
+
+        .empty { padding: 80px 40px; text-align: center; }
+        .empty-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--sage-100); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: var(--sage-500); }
+        .empty h3 { font-family: var(--font-display); font-size: 22px; color: var(--sage-900); margin-bottom: 8px; }
+        .empty p { font-size: 14px; color: var(--sage-600); max-width: 360px; margin: 0 auto 24px; }
+        .empty a {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 24px; background: var(--sage-800); color: white;
+            border-radius: 100px; text-decoration: none; font-size: 14px; font-weight: 600;
+        }
+
+        .actions-bottom {
+            display: flex; gap: 12px; justify-content: center;
+            padding: 32px 0 0; margin-top: 32px; border-top: 1px solid var(--sage-100);
+        }
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 28px; border-radius: 100px; text-decoration: none;
+            font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+            transition: all 0.2s; border: none;
+        }
+        .btn-primary { background: var(--sage-800); color: white; box-shadow: 0 8px 20px rgba(56, 79, 55, 0.2); }
+        .btn-primary:hover { background: var(--sage-900); transform: translateY(-1px); box-shadow: 0 10px 28px rgba(56, 79, 55, 0.3); }
+        .btn-outline { background: white; color: var(--sage-800); border: 1.5px solid var(--sage-200); }
+        .btn-outline:hover { background: var(--sage-100); border-color: var(--sage-300); }
+        .btn svg { transition: transform 0.2s; }
+        .btn-primary:hover svg { transform: translateX(3px); }
+
+        /* === RETRAIN BUTTON & FEEDBACK === */
+        .btn-retrain {
+            background: white;
+            color: var(--sage-700);
+            border: 1.5px solid var(--sage-300);
+            position: relative;
+        }
+        .btn-retrain:hover:not(:disabled) {
+            background: var(--sage-50);
+            border-color: var(--sage-500);
+            color: var(--sage-800);
+        }
+        .btn-retrain:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+        .btn-retrain.is-loading {
+            pointer-events: none;
+            opacity: 0.85;
+        }
+        .btn-retrain .spinner {
+            display: none;
+            width: 14px;
+            height: 14px;
+            border: 2px solid var(--sage-200);
+            border-top-color: var(--sage-700);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        .btn-retrain.is-loading .spinner { display: inline-block; }
+        .btn-retrain.is-loading .icon-default { display: none; }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Hint kecil di samping tombol retrain (kalau record < 5) */
+        .retrain-hint {
+            font-size: 11px;
+            color: var(--sage-600);
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Toast notification */
+        .toast-container {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            pointer-events: none;
+        }
+        .toast {
+            min-width: 280px;
+            max-width: 420px;
+            background: white;
+            border: 1px solid var(--sage-100);
+            border-left: 4px solid var(--sage-500);
+            border-radius: 12px;
+            padding: 14px 16px;
+            box-shadow: 0 12px 32px rgba(31, 43, 31, 0.12);
+            font-size: 13px;
+            color: var(--sage-900);
+            line-height: 1.45;
+            pointer-events: auto;
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 0.25s, transform 0.25s;
+        }
+        .toast.show { opacity: 1; transform: translateY(0); }
+        .toast.success { border-left-color: var(--success); }
+        .toast.error { border-left-color: var(--critical); }
+        .toast .title {
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--sage-800);
+        }
+        .toast.success .title { color: var(--success); }
+        .toast.error .title { color: var(--critical); }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            nav { padding: 16px 32px; }
+            .container { padding: 40px 32px 60px; }
+        }
+        @media (max-width: 900px) {
+            .stats-row { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 640px) {
+            nav { padding: 14px 20px; }
+            .logo { font-size: 18px; }
+            .logo-mark { width: 28px; height: 28px; font-size: 12px; }
+            .nav-btn { padding: 8px 12px; font-size: 12px; }
+            .container { padding: 28px 20px 60px; }
+            .header h1 { font-size: 28px; }
+            .stat-card { padding: 16px; }
+            .stat-card .v { font-size: 24px; }
+            .actions-bottom { flex-direction: column; }
+            .actions-bottom .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">
+            <div class="logo-mark">S</div>
+            <span>Stuntor</span>
+        </a>
+        <div class="nav-actions">
+            <a href="/" class="nav-btn ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Halaman Awal
+            </a>
+            <a href="/form" class="nav-btn solid">Hitung Baru</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <span class="eyebrow">Database Lokal</span>
+            <h1>Riwayat <em>perhitungan</em> Anda.</h1>
+            <p>Semua data perhitungan yang pernah Anda lakukan tersimpan di sini.</p>
+        </div>
+
+        {% if records %}
+        {% set stunting_count = records|selectattr('fuzzy_label', 'equalto', 'Stunting')|list|length %}
+        {% set normal_count = records|selectattr('fuzzy_label', 'equalto', 'Normal')|list|length %}
+        <div class="stats-row">
+            <div class="stat-card"><div class="l">Total</div><div class="v">{{ records|length }}</div></div>
+            <div class="stat-card"><div class="l">Normal</div><div class="v">{{ normal_count }}</div></div>
+            <div class="stat-card"><div class="l">Stunting</div><div class="v">{{ stunting_count }}</div></div>
+            <div class="stat-card"><div class="l">Ratio Risiko</div><div class="v">{{ '%.0f%%' % (stunting_count / records|length * 100) if records|length > 0 else '0%' }}</div></div>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Waktu</th><th>Nama</th><th>JK</th><th>Usia</th><th>TB</th><th>BB</th><th>PBL</th><th>MPASI</th>
+                            <th>Z Lahir</th><th>Label Lahir</th><th>Z Ukur</th><th>Label Ukur</th><th>Risk</th><th>Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for r in records|reverse %}
+                        <tr>
+                            <td>{{ r.timestamp[:16].replace('T', ' ') if r.timestamp else '—' }}</td>
+                            <td>{{ r.nama if r.nama and r.nama|string != 'nan' else '—' }}</td>
+                            <td>{{ 'L' if r.jenis_kelamin|string == '1' else 'P' }}</td>
+                            <td>{{ r.usia_bulan }} bln</td>
+                            <td>{{ r.tinggi_badan_cm }} cm</td>
+                            <td>{{ r.berat_badan_gram }} g</td>
+                            <td>{{ r.pbl_cm }} cm</td>
+                            <td>{{ r.mpasi_bulan }} bln</td>
+                            <td>{{ r.z_score_lahir }}</td>
+                            <td><span class="badge-small {{ 'stunting' if r.label_lahir == 'Stunting' else 'normal' }}">{{ r.label_lahir }}</span></td>
+                            <td>{{ r.z_score_ukur }}</td>
+                            <td><span class="badge-small {{ 'stunting' if r.label_ukur == 'Stunting' else 'normal' }}">{{ r.label_ukur }}</span></td>
+                            <td><strong>{{ r.risk_score }}</strong></td>
+                            <td>
+                                {% set pf = r.priority_flag %}
+                                {% if pf == 'Normal' %}<span class="badge-small normal">Normal</span>
+                                {% elif pf == 'STUNTING LOW' %}<span class="badge-small low">Low</span>
+                                {% elif pf == 'STUNTING MEDIUM' %}<span class="badge-small medium">Medium</span>
+                                {% elif pf == 'STUNTING HIGH' %}<span class="badge-small high">High</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="actions-bottom">
+            <a href="/" class="btn btn-outline">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Kembali ke Halaman Awal
+            </a>
+
+            <button id="btnRetrain" class="btn btn-retrain"
+                    {% if records|length < 5 %}disabled{% endif %}>
+                <span class="spinner" aria-hidden="true"></span>
+                <svg class="icon-default" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <path d="M14 8a6 6 0 11-2-4.47M14 2v3.5h-3.5"
+                          stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="label-text">Retrain Model</span>
+            </button>
+
+            <a href="/form" class="btn btn-primary">
+                Hitung Baru
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+        </div>
+
+        {% if records|length < 5 %}
+        <p class="retrain-hint">
+            Tombol Retrain Model aktif setelah Anda memiliki minimal 5 riwayat
+            perhitungan (saat ini: {{ records|length }}).
+        </p>
+        {% else %}
+        <p class="retrain-hint">
+            Retrain Model akan menggabungkan {{ records|length }} riwayat Anda dengan
+            dataset training awal, lalu menjalankan ulang optimasi Genetic Algorithm.
+            Proses ini memakan waktu beberapa menit.
+        </p>
+        {% endif %}
+
+        {% else %}
+        <div class="table-wrap">
+            <div class="empty">
+                <div class="empty-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Belum ada riwayat</h3>
+                <p>Mulai dengan menghitung data balita pertama Anda. Setiap perhitungan akan tersimpan otomatis di sini.</p>
+                <a href="/form">
+                    Hitung Sekarang
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Toast notification container (fixed position, harus di luar .container) -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        (function () {
+            const btn = document.getElementById('btnRetrain');
+            if (!btn) return;
+
+            const toastContainer = document.getElementById('toastContainer');
+            const labelText = btn.querySelector('.label-text');
+            const originalLabel = labelText ? labelText.textContent : 'Retrain Model';
+
+            function showToast(type, title, message, timeoutMs) {
+                const toast = document.createElement('div');
+                toast.className = 'toast ' + type;
+                toast.innerHTML =
+                    '<div class="title">' + title + '</div>' +
+                    '<div class="msg">' + message + '</div>';
+                toastContainer.appendChild(toast);
+                requestAnimationFrame(function () { toast.classList.add('show'); });
+                setTimeout(function () {
+                    toast.classList.remove('show');
+                    setTimeout(function () { toast.remove(); }, 300);
+                }, timeoutMs || 5000);
+            }
+
+            btn.addEventListener('click', async function () {
+                if (btn.disabled || btn.classList.contains('is-loading')) return;
+
+                const confirmed = window.confirm(
+                    'Retrain Model akan menggabungkan riwayat Anda dengan dataset ' +
+                    'awal lalu menjalankan ulang Genetic Algorithm. ' +
+                    'Proses ini memakan waktu beberapa menit dan tidak dapat ' +
+                    'dibatalkan setelah dimulai. Lanjutkan?'
+                );
+                if (!confirmed) return;
+
+                btn.classList.add('is-loading');
+                btn.disabled = true;
+                if (labelText) labelText.textContent = 'Melatih ulang model...';
+                showToast('info', 'Retrain dimulai',
+                          'Genetic Algorithm sedang berjalan. Mohon tunggu, jangan tutup halaman ini.',
+                          8000);
+
+                try {
+                    const response = await fetch('/retrain', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                    });
+                    const data = await response.json();
+
+                    if (data.success) {
+                        showToast('success', 'Retrain berhasil', data.message, 8000);
+                        if (labelText) labelText.textContent = 'Selesai';
+                        setTimeout(function () {
+                            if (labelText) labelText.textContent = originalLabel;
+                            btn.classList.remove('is-loading');
+                            btn.disabled = false;
+                        }, 2000);
+                    } else {
+                        showToast('error', 'Retrain gagal',
+                                  data.message || 'Terjadi kesalahan tidak dikenal.',
+                                  6000);
+                        if (labelText) labelText.textContent = originalLabel;
+                        btn.classList.remove('is-loading');
+                        btn.disabled = false;
+                    }
+                } catch (err) {
+                    showToast('error', 'Koneksi gagal',
+                              'Tidak dapat menghubungi server. Coba lagi setelah beberapa saat.',
+                              6000);
+                    if (labelText) labelText.textContent = originalLabel;
+                    btn.classList.remove('is-loading');
+                    btn.disabled = false;
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

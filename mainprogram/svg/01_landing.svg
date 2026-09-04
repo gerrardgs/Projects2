@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2700" viewBox="0 0 1440 2700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fafaf7"/>
+      <stop offset="1" stop-color="#f4f7f3"/>
+    </linearGradient>
+    <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5c7d58"/>
+      <stop offset="1" stop-color="#384f37"/>
+    </linearGradient>
+    <linearGradient id="bright" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8e0a5"/>
+      <stop offset="1" stop-color="#7dc878"/>
+    </linearGradient>
+    <linearGradient id="meter" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5c7d58"/>
+      <stop offset="1" stop-color="#384f37"/>
+    </linearGradient>
+    <radialGradient id="heroR" cx="0.7" cy="0.3">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="statR" cx="0.85" cy="0.15">
+      <stop offset="0" stop-color="#a8bda1" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#a8bda1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="2700" fill="url(#bg)"/>
+
+  <!-- ============ NAV ============ -->
+  <rect width="1440" height="72" fill="#fafaf7" fill-opacity="0.85"/>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#e6ece4"/>
+  <circle cx="64" cy="36" r="16" fill="url(#sage)"/>
+  <text x="64" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="92" y="43" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="700" fill="#2d3f2d">Stuntor</text>
+  <text x="1095" y="43" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="500" fill="#384f37">Fitur</text>
+  <text x="1140" y="43" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="500" fill="#384f37">FAQ</text>
+  <text x="1180" y="43" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="500" fill="#384f37">Ketentuan</text>
+  <text x="1248" y="43" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="500" fill="#384f37">Kontak</text>
+  <rect x="1295" y="20" width="130" height="34" rx="17" fill="url(#bright)"/>
+  <text x="1360" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#1f2b1f" text-anchor="middle">Mulai Hitung →</text>
+
+  <!-- ============ HERO ============ -->
+  <!-- Eyebrow -->
+  <rect x="80" y="200" width="380" height="28" rx="14" fill="#e6ece4"/>
+  <circle cx="98" cy="214" r="3" fill="#5c7d58"/>
+  <text x="110" y="218" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#384f37">BERBASIS STANDAR WHO &amp; PERMENKES NO. 2/2020</text>
+
+  <!-- Headline -->
+  <text x="80" y="320" font-family="Fraunces, Georgia, serif" font-size="74" font-weight="400" fill="#1f2b1f">Monitoring stunting</text>
+  <text x="80" y="408" font-family="Fraunces, Georgia, serif" font-size="74" font-weight="400" fill="#1f2b1f">balita, <tspan font-style="italic" font-weight="300" fill="#476244">lebih dari sekadar</tspan></text>
+  <text x="80" y="496" font-family="Fraunces, Georgia, serif" font-size="74" font-weight="300" font-style="italic" fill="#476244">angka.</text>
+
+  <!-- Description -->
+  <text x="80" y="558" font-family="Plus Jakarta Sans, sans-serif" font-size="18" fill="#384f37">Stuntor memberikan penilaian risiko stunting yang akurat dengan logika</text>
+  <text x="80" y="586" font-family="Plus Jakarta Sans, sans-serif" font-size="18" fill="#384f37">fuzzy Sugeno, membandingkan kondisi saat lahir dengan kondisi saat ini</text>
+  <text x="80" y="614" font-family="Plus Jakarta Sans, sans-serif" font-size="18" fill="#384f37">untuk memantau perkembangan pertumbuhan balita.</text>
+
+  <!-- Buttons -->
+  <rect x="80" y="650" width="200" height="56" rx="28" fill="#2d3f2d"/>
+  <text x="120" y="685" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#ffffff">Mulai Hitung</text>
+  <path d="M243 678h22M260 671l7 7-7 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <rect x="298" y="650" width="180" height="56" rx="28" fill="none" stroke="#ccd9c7" stroke-width="1.5"/>
+  <text x="388" y="685" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#2d3f2d" text-anchor="middle">Pelajari Lebih</text>
+
+  <!-- Hero Visual -->
+  <rect x="780" y="200" width="580" height="580" rx="28" fill="url(#sage)"/>
+  <rect x="780" y="200" width="580" height="580" rx="28" fill="url(#heroR)"/>
+  <circle cx="870" cy="290" r="120" fill="#ffffff" fill-opacity="0.08"/>
+  <circle cx="1280" cy="700" r="160" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Card 1 -->
+  <rect x="812" y="232" width="220" height="120" rx="18" fill="#ffffff"/>
+  <text x="832" y="262" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#476244">Z-SCORE LAHIR</text>
+  <text x="832" y="306" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="500" fill="#1f2b1f">-0.84</text>
+  <circle cx="836" cy="328" r="3" fill="#5c7d58"/>
+  <text x="845" y="332" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Normal · WHO Standard</text>
+
+  <!-- Card 2 -->
+  <rect x="1090" y="600" width="260" height="170" rx="18" fill="#ffffff"/>
+  <text x="1110" y="628" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#1f2b1f">Priority Flag</text>
+  <rect x="1295" y="618" width="48" height="20" rx="10" fill="#e6ece4"/>
+  <text x="1319" y="632" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#384f37" text-anchor="middle">Normal</text>
+  <rect x="1110" y="650" width="220" height="6" rx="3" fill="#e6ece4"/>
+  <rect x="1110" y="650" width="158" height="6" rx="3" fill="url(#meter)"/>
+  <text x="1135" y="700" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="500" fill="#1f2b1f" text-anchor="middle">24</text>
+  <text x="1135" y="722" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#5c7d58" text-anchor="middle">bulan</text>
+  <text x="1220" y="700" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="500" fill="#1f2b1f" text-anchor="middle">10.2</text>
+  <text x="1220" y="722" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#5c7d58" text-anchor="middle">kg</text>
+  <text x="1305" y="700" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="500" fill="#1f2b1f" text-anchor="middle">82.5</text>
+  <text x="1305" y="722" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#5c7d58" text-anchor="middle">cm</text>
+
+  <!-- Stat overlap -->
+  <rect x="750" y="600" width="200" height="72" rx="16" fill="#ffffff"/>
+  <circle cx="784" cy="636" r="20" fill="#e6ece4"/>
+  <path d="M778 637l4 4 8-8" stroke="#384f37" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <text x="816" y="630" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">98%</text>
+  <text x="816" y="652" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#476244">Akurasi WHO</text>
+
+  <!-- ============ FEATURES ============ -->
+  <g transform="translate(0, 920)">
+    <line x1="80" y1="0" x2="104" y2="0" stroke="#7d9a77"/>
+    <text x="116" y="5" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#476244">FITUR UTAMA</text>
+
+    <text x="80" y="60" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">Penilaian akurat dengan</text>
+    <text x="80" y="118" font-family="Fraunces, Georgia, serif" font-size="48" font-style="italic" font-weight="300" fill="#476244">enam variabel kunci</text>
+    <text x="535" y="118" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">pertumbuhan balita.</text>
+
+    <!-- Card 1 -->
+    <rect x="80" y="180" width="420" height="220" rx="20" fill="#ffffff" stroke="#e6ece4"/>
+    <rect x="112" y="212" width="48" height="48" rx="12" fill="#e6ece4"/>
+    <path d="M124 236v12M130 242h12" stroke="#384f37" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="112" y="304" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">Z-Score Ganda</text>
+    <text x="112" y="334" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">Menghitung Z-Score saat lahir dan saat</text>
+    <text x="112" y="354" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">pengukuran berdasarkan standar WHO LMS,</text>
+    <text x="112" y="374" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">memberikan gambaran perkembangan.</text>
+
+    <!-- Card 2 -->
+    <rect x="510" y="180" width="420" height="220" rx="20" fill="#ffffff" stroke="#e6ece4"/>
+    <rect x="542" y="212" width="48" height="48" rx="12" fill="#e6ece4"/>
+    <path d="M554 236l4 4 10-10" stroke="#384f37" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <text x="542" y="304" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">Fuzzy Sugeno</text>
+    <text x="542" y="334" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">Risk score dihitung dengan 108 rules fuzzy</text>
+    <text x="542" y="354" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">eksplisit, dioptimasi oleh Genetic Algorithm</text>
+    <text x="542" y="374" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">untuk boundary points terbaik.</text>
+
+    <!-- Card 3 -->
+    <rect x="940" y="180" width="420" height="220" rx="20" fill="#ffffff" stroke="#e6ece4"/>
+    <rect x="972" y="212" width="48" height="48" rx="12" fill="#e6ece4"/>
+    <circle cx="996" cy="236" r="10" fill="none" stroke="#384f37" stroke-width="1.5"/>
+    <path d="M996 231v5l3 2" stroke="#384f37" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <text x="972" y="304" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">Monitoring</text>
+    <text x="972" y="334" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">Pantau perubahan kondisi dari lahir hingga</text>
+    <text x="972" y="354" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">saat ini untuk identifikasi pola perkembangan</text>
+    <text x="972" y="374" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">balita yang membaik atau memburuk.</text>
+  </g>
+
+  <!-- ============ STATS BAND ============ -->
+  <g transform="translate(80, 1430)">
+    <rect width="1280" height="340" rx="32" fill="#2d3f2d"/>
+    <circle cx="1200" cy="70" r="200" fill="url(#statR)"/>
+
+    <text x="56" y="100" font-family="Fraunces, Georgia, serif" font-size="42" font-weight="300" fill="#ffffff">Dirancang untuk mengidentifikasi risiko</text>
+    <text x="56" y="150" font-family="Fraunces, Georgia, serif" font-size="42" font-weight="300" fill="#ffffff">stunting di <tspan font-style="italic" fill="#ccd9c7">seluruh wilayah di Indonesia.</tspan></text>
+
+    <line x1="56" y1="210" x2="56" y2="290" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="80" y="256" font-family="Fraunces, Georgia, serif" font-size="64" font-weight="400" fill="#ffffff">6</text>
+    <text x="80" y="284" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">Variabel antropometri berdasarkan</text>
+    <text x="80" y="302" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">standar WHO dan Permenkes</text>
+
+    <line x1="485" y1="210" x2="485" y2="290" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="509" y="256" font-family="Fraunces, Georgia, serif" font-size="64" font-weight="400" fill="#ffffff">108</text>
+    <text x="509" y="284" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">Rules fuzzy eksplisit per jenis kelamin</text>
+    <text x="509" y="302" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">dalam inferensi Sugeno</text>
+
+    <line x1="914" y1="210" x2="914" y2="290" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="938" y="256" font-family="Fraunces, Georgia, serif" font-size="64" font-weight="400" fill="#ffffff">0–59</text>
+    <text x="938" y="284" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">Rentang usia balita yang dapat</text>
+    <text x="938" y="302" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">dipantau, dalam satuan bulan</text>
+  </g>
+
+  <!-- ============ FAQ ============ -->
+  <g transform="translate(0, 1860)">
+    <line x1="80" y1="0" x2="104" y2="0" stroke="#7d9a77"/>
+    <text x="116" y="5" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#476244">PERTANYAAN UMUM</text>
+
+    <text x="80" y="60" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">FAQ — <tspan font-style="italic" font-weight="300" fill="#476244">hal-hal yang perlu</tspan></text>
+    <text x="80" y="118" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">Anda ketahui.</text>
+
+    <!-- Left description -->
+    <text x="80" y="200" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">Beberapa pertanyaan yang sering ditanyakan</text>
+    <text x="80" y="222" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">pengguna seputar penggunaan Stuntor sebagai</text>
+    <text x="80" y="244" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">kalkulator monitoring risiko stunting balita.</text>
+
+    <!-- FAQ items right side -->
+    <!-- Item 1 (open) -->
+    <rect x="600" y="180" width="760" height="110" rx="16" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="624" y="208" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#1f2b1f">Bagaimana Cara Mengisi Data Balita?</text>
+    <text x="1336" y="212" font-family="Plus Jakarta Sans, sans-serif" font-size="22" fill="#5c7d58" text-anchor="end">−</text>
+    <text x="624" y="240" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">Data Balita dapat diisi menyesuaikan perintah yang ada dalam tiap label pada</text>
+    <text x="624" y="260" font-family="Plus Jakarta Sans, sans-serif" font-size="14" fill="#384f37">form input. Pastikan semua data yang dimasukkan akurat dan sesuai satuan.</text>
+
+    <!-- Item 2 -->
+    <rect x="600" y="304" width="760" height="58" rx="16" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="624" y="340" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#1f2b1f">Siapa Yang Dapat Menggunakan Website?</text>
+    <text x="1336" y="344" font-family="Plus Jakarta Sans, sans-serif" font-size="22" fill="#5c7d58" text-anchor="end">+</text>
+
+    <!-- Item 3 -->
+    <rect x="600" y="376" width="760" height="58" rx="16" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="624" y="412" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#1f2b1f">Apa Saja Output Yang Dihasilkan?</text>
+    <text x="1336" y="416" font-family="Plus Jakarta Sans, sans-serif" font-size="22" fill="#5c7d58" text-anchor="end">+</text>
+
+    <!-- Item 4 -->
+    <rect x="600" y="448" width="760" height="58" rx="16" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="624" y="484" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#1f2b1f">Apakah Hasil Bisa Jadi Patokan Medis?</text>
+    <text x="1336" y="488" font-family="Plus Jakarta Sans, sans-serif" font-size="22" fill="#5c7d58" text-anchor="end">+</text>
+  </g>
+
+  <!-- ============ GUIDELINES ============ -->
+  <g transform="translate(0, 2470)">
+    <line x1="80" y1="0" x2="104" y2="0" stroke="#7d9a77"/>
+    <text x="116" y="5" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#476244">KETENTUAN &amp; PRIVASI</text>
+
+    <text x="80" y="60" font-family="Fraunces, Georgia, serif" font-size="42" font-weight="400" fill="#1f2b1f">Aturan dan <tspan font-style="italic" font-weight="300" fill="#476244">kebijakan</tspan> penggunaan.</text>
+
+    <!-- Card Ketentuan -->
+    <rect x="80" y="120" width="630" height="280" rx="20" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="112" y="160" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">Ketentuan Penggunaan</text>
+    <line x1="112" y1="180" x2="678" y2="180" stroke="#e6ece4"/>
+    <line x1="112" y1="222" x2="124" y2="222" stroke="#5c7d58"/>
+    <text x="138" y="227" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Pengguna langsung memasukkan data balita pada form input.</text>
+    <line x1="112" y1="262" x2="124" y2="262" stroke="#5c7d58"/>
+    <text x="138" y="267" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Pengguna mendapatkan hasil perhitungan dengan keterangan sesuai.</text>
+    <line x1="112" y1="302" x2="124" y2="302" stroke="#5c7d58"/>
+    <text x="138" y="307" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Variabel utama: Usia, Jenis Kelamin, dan Panjang/Tinggi Badan Balita.</text>
+    <line x1="112" y1="342" x2="124" y2="342" stroke="#5c7d58"/>
+    <text x="138" y="347" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Variabel pendukung: Berat Badan, Panjang Badan Lahir, dan MP-ASI.</text>
+
+    <!-- Card Privasi -->
+    <rect x="730" y="120" width="630" height="280" rx="20" fill="#ffffff" stroke="#e6ece4"/>
+    <text x="762" y="160" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="500" fill="#1f2b1f">Kebijakan Privasi</text>
+    <line x1="762" y1="180" x2="1328" y2="180" stroke="#e6ece4"/>
+    <line x1="762" y1="222" x2="774" y2="222" stroke="#5c7d58"/>
+    <text x="788" y="227" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Target pengguna: seluruh elemen masyarakat Indonesia.</text>
+    <line x1="762" y1="262" x2="774" y2="262" stroke="#5c7d58"/>
+    <text x="788" y="267" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Website hanya menawarkan keluaran berupa hasil perhitungan.</text>
+    <line x1="762" y1="302" x2="774" y2="302" stroke="#5c7d58"/>
+    <text x="788" y="307" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Hasil tidak ditujukan untuk dasar pengambilan keputusan medis.</text>
+    <line x1="762" y1="342" x2="774" y2="342" stroke="#5c7d58"/>
+    <text x="788" y="347" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Disarankan berkonsultasi dengan tenaga kesehatan profesional.</text>
+  </g>
+
+  <!-- ============ FOOTER ============ -->
+  <g transform="translate(0, 2580)">
+    <line x1="80" y1="0" x2="1360" y2="0" stroke="#e6ece4"/>
+    <text x="80" y="40" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="500" fill="#1f2b1f">Stuntor</text>
+    <text x="80" y="68" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">Sistem kalkulator risiko stunting berbasis AI untuk monitoring</text>
+    <text x="80" y="86" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#384f37">pertumbuhan balita di seluruh Indonesia. Studi kasus SKI 2023.</text>
+
+    <text x="900" y="40" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#1f2b1f">KONTAK</text>
+    <text x="900" y="68" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">0813-5996-1553</text>
+    <text x="900" y="92" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">newname1350@gmail.com</text>
+
+    <text x="1100" y="40" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#1f2b1f">PRODUK</text>
+    <text x="1100" y="68" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">Kalkulator</text>
+    <text x="1100" y="92" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">Riwayat</text>
+
+    <text x="1240" y="40" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#1f2b1f">BANTUAN</text>
+    <text x="1240" y="68" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">FAQ</text>
+    <text x="1240" y="92" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#476244">Privasi</text>
+
+    <line x1="80" y1="120" x2="1360" y2="120" stroke="#e6ece4"/>
+    <text x="80" y="148" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">© 2025 Stuntor. Semua hak dilindungi.</text>
+    <text x="1360" y="148" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244" text-anchor="end">Studi Kasus SKI 2023</text>
+  </g>
+</svg>

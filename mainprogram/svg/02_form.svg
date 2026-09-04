@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080">
+  <defs>
+    <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5c7d58"/>
+      <stop offset="1" stop-color="#384f37"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="1080" fill="#fafaf7"/>
+
+  <!-- NAV -->
+  <rect width="1440" height="72" fill="#fafaf7" fill-opacity="0.9"/>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#e6ece4"/>
+  <circle cx="64" cy="36" r="15" fill="url(#sage)"/>
+  <text x="64" y="41" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="92" y="42" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" fill="#2d3f2d">Stuntor</text>
+
+  <!-- Back btn -->
+  <rect x="1280" y="22" width="140" height="32" rx="16" fill="#ffffff" stroke="#ccd9c7"/>
+  <path d="M1300 38h-8M1297 34l-4 4 4 4" stroke="#384f37" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <text x="1310" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#384f37">Halaman Awal</text>
+
+  <!-- LEFT SIDE - Info -->
+  <g transform="translate(170, 140)">
+    <rect width="170" height="26" rx="13" fill="#e6ece4"/>
+    <circle cx="14" cy="13" r="2.5" fill="#5c7d58"/>
+    <text x="24" y="17" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#384f37">LANGKAH 1 DARI 2</text>
+
+    <text x="0" y="90" font-family="Fraunces, Georgia, serif" font-size="46" font-weight="400" fill="#1f2b1f">Isi data <tspan font-style="italic" font-weight="300" fill="#476244">balita</tspan></text>
+    <text x="0" y="142" font-family="Fraunces, Georgia, serif" font-size="46" font-weight="400" fill="#1f2b1f">Anda.</text>
+
+    <text x="0" y="195" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">Masukkan 6 data antropometri balita</text>
+    <text x="0" y="217" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">dengan akurat. Sistem akan menghitung</text>
+    <text x="0" y="239" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#384f37">Z-Score WHO dan risk score fuzzy Sugeno.</text>
+
+    <line x1="0" y1="285" x2="380" y2="285" stroke="#e6ece4"/>
+
+    <circle cx="14" cy="316" r="14" fill="#e6ece4"/>
+    <text x="14" y="320" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="600" fill="#384f37" text-anchor="middle">1</text>
+    <text x="44" y="313" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#1f2b1f">Data Identitas</text>
+    <text x="44" y="331" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Usia (0–59 bulan) dan jenis kelamin balita</text>
+    <line x1="0" y1="354" x2="380" y2="354" stroke="#e6ece4"/>
+
+    <circle cx="14" cy="384" r="14" fill="#e6ece4"/>
+    <text x="14" y="388" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="600" fill="#384f37" text-anchor="middle">2</text>
+    <text x="44" y="381" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#1f2b1f">Data Saat Pengukuran</text>
+    <text x="44" y="399" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Tinggi badan (cm) dan berat badan (gram) saat ini</text>
+    <line x1="0" y1="422" x2="380" y2="422" stroke="#e6ece4"/>
+
+    <circle cx="14" cy="452" r="14" fill="#e6ece4"/>
+    <text x="14" y="456" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="600" fill="#384f37" text-anchor="middle">3</text>
+    <text x="44" y="449" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#1f2b1f">Data Riwayat</text>
+    <text x="44" y="467" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Panjang badan lahir dan usia pemberian MP-ASI</text>
+  </g>
+
+  <!-- RIGHT SIDE - Form card -->
+  <rect x="640" y="140" width="635" height="800" rx="24" fill="#ffffff" stroke="#e6ece4"/>
+
+  <text x="680" y="184" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#476244">DATA BALITA</text>
+  <text x="680" y="216" font-family="Fraunces, Georgia, serif" font-size="26" font-weight="500" fill="#1f2b1f">Lengkapi informasi di bawah ini</text>
+  <line x1="680" y1="256" x2="1235" y2="256" stroke="#e6ece4"/>
+
+  <!-- Row 1 -->
+  <g transform="translate(680, 280)">
+    <text x="0" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Umur Balita</text>
+    <text x="85" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7d9a77">(dalam bulan)</text>
+    <rect x="0" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="16" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">12</text>
+    <text x="234" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="500" fill="#7d9a77">bulan</text>
+
+    <text x="295" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Jenis Kelamin</text>
+    <rect x="295" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="311" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">Pilih jenis kelamin</text>
+    <path d="M533 34l4 4 4-4" stroke="#5c7d58" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(680, 376)">
+    <text x="0" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Panjang/Tinggi Badan</text>
+    <text x="135" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7d9a77">(saat pengukuran)</text>
+    <rect x="0" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="16" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">75.0</text>
+    <text x="240" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="500" fill="#7d9a77">cm</text>
+
+    <text x="295" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Berat Badan</text>
+    <text x="370" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7d9a77">(saat pengukuran)</text>
+    <rect x="295" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="311" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">8500</text>
+    <text x="525" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="500" fill="#7d9a77">gram</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(680, 472)">
+    <text x="0" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Panjang Badan Lahir</text>
+    <text x="127" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7d9a77">(saat lahir)</text>
+    <rect x="0" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="16" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">49.0</text>
+    <text x="240" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="500" fill="#7d9a77">cm</text>
+
+    <text x="295" y="0" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#2d3f2d">Usia Pemberian MP-ASI</text>
+    <rect x="295" y="12" width="260" height="48" rx="12" fill="#f4f7f3"/>
+    <text x="311" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#a8bda1">Pilih bulan pemberian</text>
+    <path d="M533 34l4 4 4-4" stroke="#5c7d58" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Actions -->
+  <line x1="680" y1="600" x2="1235" y2="600" stroke="#e6ece4"/>
+  <text x="680" y="642" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Data tidak disimpan untuk keperluan lain</text>
+
+  <!-- Home button -->
+  <rect x="850" y="616" width="158" height="48" rx="24" fill="#ffffff" stroke="#ccd9c7" stroke-width="1.5"/>
+  <path d="M876 640h-10M870 636l-4 4 4 4" stroke="#2d3f2d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <text x="892" y="645" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#2d3f2d">Halaman Awal</text>
+
+  <!-- Hitung button -->
+  <rect x="1020" y="616" width="215" height="48" rx="24" fill="#2d3f2d"/>
+  <text x="1040" y="645" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Hitung Risk Score</text>
+  <path d="M1208 640h12M1216 636l4 4-4 4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>

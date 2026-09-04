@@ -1,0 +1,390 @@
+No,Sex,Umur (bln),TB Lahir (cm),TB Saat Ukur (cm),BB Saat Ukur (g),MPASI (bln),Z-Score (lahir),Label WHO (lahir),Z-Score (saat ukur),Label WHO (saat ukur),Risk Score,Priority Flag,Fuzzy Label,Jarak Lahir-Ukur (bln),Jarak MPASI-Survei (bln)
+1,Perempuan,22,50.0,81.7,9000.0,7.0,0.458,Normal,-0.931,Normal,10.0,Normal,Normal,22,15.0
+2,Laki-laki,19,45.6,84.4,11600.0,6.0,-2.263,Stunting,0.42,Normal,10.0,Normal,Normal,19,13.0
+3,Perempuan,19,49.0,78.8,9900.0,0.25,-0.079,Normal,-0.986,Normal,35.0,STUNTING LOW,Stunting,19,18.75
+4,Perempuan,7,45.0,65.5,7500.0,0.25,-2.227,Stunting,-0.772,Normal,44.82,STUNTING LOW,Stunting,7,6.75
+5,Perempuan,14,50.0,73.0,8200.0,0.25,0.458,Normal,-1.26,Normal,44.77,STUNTING LOW,Stunting,14,13.75
+6,Perempuan,4,47.0,58.7,5600.0,0.25,-1.153,Normal,-1.566,Normal,62.5,STUNTING MEDIUM,Stunting,4,3.75
+7,Perempuan,13,50.0,74.5,8400.0,0.25,0.458,Normal,-0.273,Normal,37.74,STUNTING LOW,Stunting,13,12.75
+8,Perempuan,9,49.0,69.3,5500.0,6.0,-0.079,Normal,-0.349,Normal,43.58,STUNTING LOW,Stunting,9,3.0
+9,Laki-laki,18,51.0,78.1,11300.0,6.0,0.589,Normal,-1.542,Normal,12.69,Normal,Normal,18,12.0
+10,Perempuan,6,48.0,67.6,7500.0,6.0,-0.616,Normal,0.825,Normal,16.41,Normal,Normal,6,0.0
+11,Laki-laki,13,49.0,74.5,8100.0,6.0,-0.467,Normal,-0.997,Normal,21.0,Normal,Normal,13,7.0
+12,Perempuan,11,51.0,80.1,10300.0,5.0,0.994,Normal,2.907,Normal,10.0,Normal,Normal,11,6.0
+13,Perempuan,23,51.0,86.2,10800.0,6.0,0.994,Normal,0.214,Normal,10.0,Normal,Normal,23,17.0
+14,Laki-laki,21,48.0,84.0,11100.0,7.0,-0.995,Normal,-0.395,Normal,10.0,Normal,Normal,21,14.0
+15,Laki-laki,18,48.0,77.4,8000.0,6.0,-0.995,Normal,-1.801,Normal,17.65,Normal,Normal,18,12.0
+16,Perempuan,5,48.0,63.6,6200.0,2.0,-0.616,Normal,-0.194,Normal,56.43,STUNTING MEDIUM,Stunting,5,3.0
+17,Laki-laki,22,49.0,84.1,10400.0,6.0,-0.467,Normal,-0.664,Normal,10.0,Normal,Normal,22,16.0
+18,Perempuan,7,49.5,65.3,7000.0,4.0,0.189,Normal,-0.858,Normal,36.25,STUNTING LOW,Stunting,7,3.0
+19,Perempuan,21,49.0,79.5,10400.0,0.25,-0.079,Normal,-1.358,Normal,35.0,STUNTING LOW,Stunting,21,20.75
+20,Perempuan,7,49.0,62.6,7200.0,5.0,-0.079,Normal,-2.024,Stunting,24.95,STUNTING LOW,Stunting,7,2.0
+21,Laki-laki,6,51.0,66.7,7400.0,6.0,0.589,Normal,-0.432,Normal,20.94,Normal,Normal,6,0.0
+22,Perempuan,16,50.0,75.2,9400.0,5.0,0.458,Normal,-1.219,Normal,10.0,Normal,Normal,16,11.0
+23,Perempuan,3,42.0,57.7,6100.0,6.0,-3.837,Stunting,-0.999,Normal,38.89,STUNTING LOW,Stunting,3,0.0
+24,Perempuan,22,50.0,78.6,10600.0,2.0,0.458,Normal,-1.924,Normal,35.0,STUNTING LOW,Stunting,22,20.0
+25,Laki-laki,14,47.0,71.1,7800.0,6.0,-1.524,Normal,-2.805,Stunting,26.31,STUNTING LOW,Stunting,14,8.0
+26,Perempuan,19,50.0,78.2,8300.0,6.0,0.458,Normal,-1.189,Normal,10.0,Normal,Normal,19,13.0
+27,Perempuan,23,47.0,73.9,8000.0,4.0,-1.153,Normal,-3.661,Stunting,37.5,STUNTING LOW,Stunting,23,19.0
+28,Perempuan,5,51.0,58.6,5100.0,6.0,0.994,Normal,-2.449,Stunting,50.63,STUNTING MEDIUM,Stunting,5,0.0
+29,Perempuan,20,48.0,78.5,10600.0,6.0,-0.616,Normal,-1.395,Normal,10.0,Normal,Normal,20,14.0
+30,Laki-laki,20,49.0,78.6,9100.0,6.0,-0.467,Normal,-1.99,Normal,10.0,Normal,Normal,20,14.0
+31,Perempuan,23,50.0,83.9,9900.0,6.0,0.458,Normal,-0.511,Normal,10.0,Normal,Normal,23,17.0
+32,Laki-laki,19,50.0,80.2,12500.0,6.0,0.061,Normal,-1.104,Normal,10.0,Normal,Normal,19,13.0
+33,Laki-laki,11,50.0,71.1,9000.0,1.0,0.061,Normal,-1.476,Normal,47.31,STUNTING LOW,Stunting,11,10.0
+34,Laki-laki,22,48.0,86.5,11900.0,6.0,-0.995,Normal,0.154,Normal,10.0,Normal,Normal,22,16.0
+35,Perempuan,17,52.0,81.0,10200.0,6.0,1.531,Normal,0.466,Normal,10.0,Normal,Normal,17,11.0
+36,Laki-laki,5,54.0,66.6,6800.0,1.0,2.174,Normal,0.33,Normal,50.0,STUNTING LOW,Stunting,5,4.0
+37,Laki-laki,1,49.0,58.0,5400.0,0.25,-0.467,Normal,1.683,Normal,90.0,STUNTING HIGH,Stunting,1,0.75
+38,Laki-laki,21,49.0,81.1,9100.0,0.25,-0.467,Normal,-1.404,Normal,35.0,STUNTING LOW,Stunting,21,20.75
+39,Perempuan,10,50.0,69.7,7900.0,0.25,0.458,Normal,-0.722,Normal,43.32,STUNTING LOW,Stunting,10,9.75
+40,Perempuan,22,49.0,79.5,9000.0,5.0,-0.079,Normal,-1.636,Normal,10.0,Normal,Normal,22,17.0
+41,Perempuan,10,50.0,68.5,8300.0,6.0,0.458,Normal,-1.208,Normal,18.01,Normal,Normal,10,4.0
+42,Laki-laki,6,54.0,64.0,8200.0,6.0,2.174,Normal,-1.693,Normal,24.56,STUNTING LOW,Stunting,6,0.0
+43,Laki-laki,21,52.0,98.2,14000.0,6.0,1.118,Normal,4.546,Normal,10.0,Normal,Normal,21,15.0
+44,Laki-laki,7,48.0,67.3,7200.0,6.0,-0.995,Normal,-0.859,Normal,20.21,Normal,Normal,7,1.0
+45,Perempuan,7,50.0,72.2,9200.0,6.0,0.458,Normal,2.122,Normal,13.09,Normal,Normal,7,1.0
+46,Perempuan,5,47.0,60.1,5600.0,2.0,-1.153,Normal,-1.772,Normal,62.5,STUNTING MEDIUM,Stunting,5,3.0
+47,Laki-laki,12,50.0,79.1,9400.0,5.0,0.061,Normal,1.41,Normal,10.0,Normal,Normal,12,7.0
+48,Perempuan,20,50.0,79.1,9800.0,1.0,0.458,Normal,-1.196,Normal,35.0,STUNTING LOW,Stunting,20,19.0
+49,Laki-laki,21,52.0,114.5,10350.0,6.0,1.118,Normal,10.217,Normal,10.0,Normal,Normal,21,15.0
+50,Laki-laki,8,46.0,66.3,7300.0,6.0,-2.052,Stunting,-1.949,Normal,21.44,Normal,Normal,8,2.0
+51,Laki-laki,19,48.0,90.0,15000.0,0.5,-0.995,Normal,2.453,Normal,25.92,STUNTING LOW,Stunting,19,18.5
+52,Perempuan,17,47.0,75.0,8700.0,8.0,-1.153,Normal,-1.64,Normal,22.5,Normal,Normal,17,9.0
+53,Laki-laki,13,50.0,73.0,8100.0,6.0,0.061,Normal,-1.615,Normal,22.51,STUNTING LOW,Stunting,13,7.0
+54,Laki-laki,11,49.0,73.6,8700.0,6.0,-0.467,Normal,-0.403,Normal,17.86,Normal,Normal,11,5.0
+55,Perempuan,17,50.0,78.2,10400.0,6.0,0.458,Normal,-0.516,Normal,10.0,Normal,Normal,17,11.0
+56,Laki-laki,19,50.0,75.9,9300.0,6.0,0.061,Normal,-2.665,Stunting,23.88,STUNTING LOW,Stunting,19,13.0
+57,Perempuan,6,49.0,66.0,7200.0,6.0,-0.079,Normal,0.119,Normal,20.13,Normal,Normal,6,0.0
+58,Perempuan,21,50.0,76.5,8900.0,6.0,0.458,Normal,-2.336,Stunting,10.0,Normal,Normal,21,15.0
+59,Laki-laki,19,48.0,74.5,9100.0,6.0,-0.995,Normal,-3.173,Stunting,28.92,STUNTING LOW,Stunting,19,13.0
+60,Laki-laki,8,52.0,68.9,7200.0,6.0,1.118,Normal,-0.771,Normal,19.44,Normal,Normal,8,2.0
+61,Perempuan,11,50.0,73.7,7800.0,6.0,0.458,Normal,0.369,Normal,12.38,Normal,Normal,11,5.0
+62,Perempuan,10,49.0,66.5,7200.0,6.0,-0.079,Normal,-2.019,Stunting,22.6,STUNTING LOW,Stunting,10,4.0
+63,Perempuan,6,49.0,66.5,7700.0,0.25,-0.079,Normal,0.339,Normal,43.69,STUNTING LOW,Stunting,6,5.75
+64,Perempuan,17,50.0,67.2,7200.0,6.0,0.458,Normal,-4.377,Stunting,41.5,STUNTING LOW,Stunting,17,11.0
+65,Perempuan,7,51.0,66.5,8100.0,7.0,0.994,Normal,-0.34,Normal,17.58,Normal,Normal,7,0.0
+66,Laki-laki,19,49.0,79.0,10400.0,5.0,-0.467,Normal,-1.54,Normal,10.0,Normal,Normal,19,14.0
+67,Laki-laki,20,48.0,83.0,8500.0,6.0,-0.995,Normal,-0.426,Normal,10.0,Normal,Normal,20,14.0
+68,Laki-laki,20,48.8,78.2,9700.0,6.0,-0.573,Normal,-2.132,Stunting,11.41,Normal,Normal,20,14.0
+69,Perempuan,13,52.0,73.0,8600.0,6.0,1.531,Normal,-0.843,Normal,18.01,Normal,Normal,13,7.0
+70,Perempuan,8,51.0,68.8,8060.000000000001,6.0,0.994,Normal,0.021,Normal,16.5,Normal,Normal,8,2.0
+71,Laki-laki,2,51.0,56.4,4900.0,6.0,0.589,Normal,-1.012,Normal,65.0,STUNTING MEDIUM,Stunting,2,0.0
+72,Perempuan,16,48.0,75.2,8800.0,0.25,-0.616,Normal,-1.219,Normal,35.0,STUNTING LOW,Stunting,16,15.75
+73,Perempuan,6,50.0,65.6,6400.0,4.0,0.458,Normal,-0.058,Normal,36.25,STUNTING LOW,Stunting,6,2.0
+74,Laki-laki,14,42.0,75.7,8200.0,7.0,-4.165,Stunting,-0.948,Normal,24.36,STUNTING LOW,Stunting,14,7.0
+75,Perempuan,16,50.5,75.0,7500.0,6.0,0.726,Normal,-1.29,Normal,10.0,Normal,Normal,16,10.0
+76,Perempuan,6,48.0,62.7,6600.0,6.0,-0.616,Normal,-1.337,Normal,29.46,STUNTING LOW,Stunting,6,0.0
+77,Perempuan,11,50.0,65.0,6800.0,6.0,0.458,Normal,-3.083,Stunting,29.5,STUNTING LOW,Stunting,11,5.0
+78,Laki-laki,23,47.0,89.2,12800.0,6.0,-1.524,Normal,0.754,Normal,10.0,Normal,Normal,23,17.0
+79,Laki-laki,14,53.0,74.2,8400.0,6.0,1.646,Normal,-1.554,Normal,25.56,STUNTING LOW,Stunting,14,8.0
+80,Laki-laki,16,48.0,75.5,9200.0,6.0,-0.995,Normal,-1.823,Normal,29.23,STUNTING LOW,Stunting,16,10.0
+81,Laki-laki,7,52.0,69.0,7300.0,6.0,1.118,Normal,-0.076,Normal,18.78,Normal,Normal,7,1.0
+82,Perempuan,12,49.0,69.8,7100.0,6.0,-0.079,Normal,-1.637,Normal,25.17,STUNTING LOW,Stunting,12,6.0
+83,Laki-laki,14,48.0,88.0,11000.0,7.0,-0.995,Normal,4.017,Normal,10.0,Normal,Normal,14,7.0
+84,Perempuan,6,49.0,62.0,8100.0,7.0,-0.079,Normal,-1.646,Normal,20.64,Normal,Normal,6,0.0
+85,Laki-laki,6,49.0,65.6,7200.0,6.0,-0.467,Normal,-0.945,Normal,22.34,Normal,Normal,6,0.0
+86,Perempuan,18,50.0,79.2,9300.0,6.0,0.458,Normal,-0.519,Normal,10.0,Normal,Normal,18,12.0
+87,Laki-laki,12,49.0,77.0,8600.0,6.0,-0.467,Normal,0.527,Normal,13.48,Normal,Normal,12,6.0
+88,Laki-laki,20,51.0,83.6,10500.0,6.0,0.589,Normal,-0.213,Normal,10.0,Normal,Normal,20,14.0
+89,Laki-laki,16,52.2,79.9,10400.0,6.0,1.223,Normal,-0.12,Normal,10.0,Normal,Normal,16,10.0
+90,Perempuan,19,50.0,72.1,8300.0,6.0,0.458,Normal,-3.251,Stunting,23.96,STUNTING LOW,Stunting,19,13.0
+91,Perempuan,19,49.0,77.6,10400.0,6.0,-0.079,Normal,-1.392,Normal,10.0,Normal,Normal,19,13.0
+92,Laki-laki,19,52.0,83.6,13500.0,6.0,1.118,Normal,0.13,Normal,10.0,Normal,Normal,19,13.0
+93,Laki-laki,11,50.8,83.6,11100.0,6.0,0.484,Normal,3.89,Normal,10.0,Normal,Normal,11,5.0
+94,Laki-laki,14,50.0,78.6,12600.0,6.0,0.061,Normal,0.222,Normal,10.0,Normal,Normal,14,8.0
+95,Laki-laki,16,50.0,83.8,11600.0,6.0,0.061,Normal,1.389,Normal,10.0,Normal,Normal,16,10.0
+96,Perempuan,19,48.2,79.9,9800.0,6.0,-0.509,Normal,-0.615,Normal,10.0,Normal,Normal,19,13.0
+97,Laki-laki,7,50.0,67.2,7700.0,6.0,0.061,Normal,-0.905,Normal,20.33,Normal,Normal,7,1.0
+98,Laki-laki,4,50.0,66.2,8400.0,6.0,0.061,Normal,1.112,Normal,21.57,Normal,Normal,4,0.0
+99,Laki-laki,13,48.0,72.6,7900.0,0.25,-0.995,Normal,-1.78,Normal,48.67,STUNTING LOW,Stunting,13,12.75
+100,Laki-laki,8,52.0,68.0,7700.0,6.0,1.118,Normal,-1.179,Normal,19.98,Normal,Normal,8,2.0
+101,Perempuan,10,48.5,69.5,7000.0,2.0,-0.348,Normal,-0.803,Normal,47.77,STUNTING LOW,Stunting,10,8.0
+102,Laki-laki,11,54.0,74.0,9200.0,6.0,2.174,Normal,-0.231,Normal,17.4,Normal,Normal,11,5.0
+103,Perempuan,18,50.0,76.0,9200.0,6.0,0.458,Normal,-1.621,Normal,10.0,Normal,Normal,18,12.0
+104,Perempuan,10,49.0,67.2,6650.0,3.0,-0.079,Normal,-1.735,Normal,51.58,STUNTING MEDIUM,Stunting,10,7.0
+105,Laki-laki,21,59.0,85.5,10300.0,7.0,4.815,Normal,0.127,Normal,10.0,Normal,Normal,21,14.0
+106,Laki-laki,20,56.0,83.5,10200.0,6.0,3.231,Normal,-0.249,Normal,10.0,Normal,Normal,20,14.0
+107,Laki-laki,16,50.0,76.5,10600.0,2.0,0.061,Normal,-1.436,Normal,46.7,STUNTING LOW,Stunting,16,14.0
+108,Laki-laki,13,48.0,71.5,7900.0,6.0,-0.995,Normal,-2.234,Stunting,23.73,STUNTING LOW,Stunting,13,7.0
+109,Perempuan,20,48.0,76.7,11100.0,4.0,-0.616,Normal,-1.993,Normal,10.0,Normal,Normal,20,16.0
+110,Laki-laki,18,48.0,77.0,9200.0,6.0,-0.995,Normal,-1.95,Normal,20.08,Normal,Normal,18,12.0
+111,Laki-laki,7,47.0,72.0,8300.0,6.0,-1.524,Normal,1.306,Normal,16.74,Normal,Normal,7,1.0
+112,Laki-laki,0,44.0,56.0,4400.0,7.0,-3.108,Stunting,3.231,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+113,Laki-laki,11,51.0,72.0,8000.0,7.0,0.589,Normal,-1.09,Normal,19.47,Normal,Normal,11,4.0
+114,Perempuan,1,50.0,54.0,4000.0,6.0,0.458,Normal,0.16,Normal,54.23,STUNTING MEDIUM,Stunting,1,0.0
+115,Laki-laki,12,48.0,72.2,8200.0,6.0,-0.995,Normal,-1.493,Normal,20.35,Normal,Normal,12,6.0
+116,Perempuan,23,47.0,77.5,8000.0,10.0,-1.153,Normal,-2.527,Stunting,35.0,STUNTING LOW,Stunting,23,13.0
+117,Laki-laki,5,50.0,63.7,6700.0,2.0,0.061,Normal,-1.043,Normal,62.5,STUNTING MEDIUM,Stunting,5,3.0
+118,Laki-laki,5,49.0,62.0,6600.0,0.25,-0.467,Normal,-1.848,Normal,62.5,STUNTING MEDIUM,Stunting,5,4.75
+119,Perempuan,20,48.0,77.0,9010.0,7.0,-0.616,Normal,-1.893,Normal,10.0,Normal,Normal,20,13.0
+120,Laki-laki,17,50.0,79.3,9500.0,6.0,0.061,Normal,-0.738,Normal,10.0,Normal,Normal,17,11.0
+121,Perempuan,14,53.0,70.3,10610.0,6.0,2.068,Normal,-2.266,Stunting,25.52,STUNTING LOW,Stunting,14,8.0
+122,Laki-laki,16,50.0,79.7,10020.0,6.0,0.061,Normal,-0.198,Normal,10.0,Normal,Normal,16,10.0
+123,Laki-laki,20,49.0,77.0,10000.0,6.0,-0.467,Normal,-2.559,Stunting,17.81,Normal,Normal,20,14.0
+124,Perempuan,11,50.0,69.5,7400.0,6.0,0.458,Normal,-1.298,Normal,17.92,Normal,Normal,11,5.0
+125,Perempuan,16,50.0,71.3,12000.0,6.0,0.458,Normal,-2.614,Stunting,30.31,STUNTING LOW,Stunting,16,10.0
+126,Perempuan,7,50.5,70.8,9500.0,6.0,0.726,Normal,1.517,Normal,14.4,Normal,Normal,7,1.0
+127,Laki-laki,20,50.0,84.0,12030.0,0.25,0.061,Normal,-0.071,Normal,35.0,STUNTING LOW,Stunting,20,19.75
+128,Perempuan,15,50.0,75.0,9020.0,6.0,0.458,Normal,-0.916,Normal,10.0,Normal,Normal,15,9.0
+129,Laki-laki,21,49.3,85.5,12800.0,6.0,-0.309,Normal,0.127,Normal,10.0,Normal,Normal,21,15.0
+130,Laki-laki,23,49.2,82.1,9800.0,6.0,-0.361,Normal,-1.616,Normal,10.0,Normal,Normal,23,17.0
+131,Laki-laki,21,49.0,83.9,11000.0,6.0,-0.467,Normal,-0.43,Normal,10.0,Normal,Normal,21,15.0
+132,Laki-laki,12,49.0,74.0,8900.0,6.0,-0.467,Normal,-0.736,Normal,18.36,Normal,Normal,12,6.0
+133,Laki-laki,10,50.1,68.5,8700.0,6.0,0.114,Normal,-2.093,Stunting,21.19,Normal,Normal,10,4.0
+134,Laki-laki,8,48.0,69.0,7300.0,6.0,-0.995,Normal,-0.725,Normal,19.38,Normal,Normal,8,2.0
+135,Perempuan,10,49.0,70.8,8100.0,6.0,-0.079,Normal,-0.276,Normal,15.82,Normal,Normal,10,4.0
+136,Perempuan,20,48.0,82.6,10600.0,4.0,-0.616,Normal,-0.034,Normal,10.0,Normal,Normal,20,16.0
+137,Perempuan,11,50.0,71.3,9100.0,5.0,0.458,Normal,-0.584,Normal,15.92,Normal,Normal,11,6.0
+138,Perempuan,21,49.9,87.1,11700.0,6.0,0.404,Normal,1.12,Normal,10.0,Normal,Normal,21,15.0
+139,Laki-laki,21,48.0,80.0,11200.0,6.0,-0.995,Normal,-1.787,Normal,10.0,Normal,Normal,21,15.0
+140,Laki-laki,20,50.0,77.9,9000.0,6.0,0.061,Normal,-2.239,Stunting,13.17,Normal,Normal,20,14.0
+141,Laki-laki,10,49.0,72.5,9300.0,6.0,-0.467,Normal,-0.342,Normal,18.15,Normal,Normal,10,4.0
+142,Perempuan,22,50.0,77.0,9700.0,6.0,0.458,Normal,-2.437,Stunting,10.0,Normal,Normal,22,16.0
+143,Laki-laki,7,49.0,68.0,8100.0,6.0,-0.467,Normal,-0.536,Normal,19.38,Normal,Normal,7,1.0
+144,Laki-laki,19,48.0,90.6,12500.0,5.0,-0.995,Normal,2.671,Normal,10.0,Normal,Normal,19,14.0
+145,Perempuan,16,51.0,73.7,10200.0,8.0,0.994,Normal,-1.755,Normal,31.93,STUNTING LOW,Stunting,16,8.0
+146,Laki-laki,1,50.0,50.3,3600.0,0.25,0.061,Normal,-2.273,Stunting,90.0,STUNTING HIGH,Stunting,1,0.75
+147,Perempuan,16,49.0,75.6,8100.0,6.0,-0.079,Normal,-1.076,Normal,10.0,Normal,Normal,16,10.0
+148,Perempuan,9,49.0,69.4,6800.0,2.0,-0.079,Normal,-0.308,Normal,48.51,STUNTING LOW,Stunting,9,7.0
+149,Perempuan,20,47.0,80.6,9500.0,6.0,-1.153,Normal,-0.698,Normal,10.0,Normal,Normal,20,14.0
+150,Perempuan,11,50.0,69.0,8700.0,6.0,0.458,Normal,-1.496,Normal,18.4,Normal,Normal,11,5.0
+151,Perempuan,23,49.0,86.6,12300.0,0.25,-0.079,Normal,0.34,Normal,35.0,STUNTING LOW,Stunting,23,22.75
+152,Laki-laki,17,50.0,75.0,9300.0,6.0,0.061,Normal,-2.366,Stunting,31.35,STUNTING LOW,Stunting,17,11.0
+153,Perempuan,21,49.2,76.7,7700.0,6.0,0.028,Normal,-2.271,Stunting,10.0,Normal,Normal,21,15.0
+154,Laki-laki,10,50.0,76.3,10200.0,6.0,0.061,Normal,1.321,Normal,13.7,Normal,Normal,10,4.0
+155,Perempuan,0,48.0,48.0,3100.0,6.0,-0.616,Normal,-0.616,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+156,Laki-laki,18,47.0,78.0,9500.0,6.0,-1.524,Normal,-1.579,Normal,13.46,Normal,Normal,18,12.0
+157,Laki-laki,15,48.0,77.8,10400.0,6.0,-0.995,Normal,-0.532,Normal,16.37,Normal,Normal,15,9.0
+158,Perempuan,8,50.0,74.0,9100.0,6.0,0.458,Normal,2.22,Normal,11.27,Normal,Normal,8,2.0
+159,Laki-laki,2,48.0,56.3,5300.0,0.25,-0.995,Normal,-1.062,Normal,90.0,STUNTING HIGH,Stunting,2,1.75
+160,Perempuan,16,50.0,98.4,23010.0,9.0,0.458,Normal,7.084,Normal,10.0,Normal,Normal,16,7.0
+161,Perempuan,17,48.0,73.1,8100.0,6.0,-0.616,Normal,-2.306,Stunting,23.16,STUNTING LOW,Stunting,17,11.0
+162,Laki-laki,16,48.0,72.5,8500.0,5.0,-0.995,Normal,-2.984,Stunting,32.69,STUNTING LOW,Stunting,16,11.0
+163,Laki-laki,9,50.0,70.9,8100.0,0.25,0.061,Normal,-0.476,Normal,45.5,STUNTING LOW,Stunting,9,8.75
+164,Perempuan,10,49.0,69.2,7100.0,2.0,-0.079,Normal,-0.925,Normal,47.04,STUNTING LOW,Stunting,10,8.0
+165,Laki-laki,8,49.0,69.7,6800.0,5.0,-0.467,Normal,-0.408,Normal,22.5,Normal,Normal,8,3.0
+166,Perempuan,17,48.0,83.8,11100.0,2.0,-0.616,Normal,1.449,Normal,35.0,STUNTING LOW,Stunting,17,15.0
+167,Perempuan,13,50.0,76.7,9300.0,6.0,0.458,Normal,0.564,Normal,10.0,Normal,Normal,13,7.0
+168,Perempuan,22,50.0,87.0,12000.0,7.0,0.458,Normal,0.768,Normal,10.0,Normal,Normal,22,15.0
+169,Perempuan,20,45.0,78.3,8700.0,0.25,-2.227,Stunting,-1.462,Normal,35.0,STUNTING LOW,Stunting,20,19.75
+170,Perempuan,22,49.0,84.6,9800.0,0.25,-0.079,Normal,-0.001,Normal,35.0,STUNTING LOW,Stunting,22,21.75
+171,Perempuan,22,55.0,83.5,10200.0,6.0,3.142,Normal,-0.354,Normal,10.0,Normal,Normal,22,16.0
+172,Laki-laki,11,48.0,73.5,8200.0,6.0,-0.995,Normal,-0.446,Normal,17.97,Normal,Normal,11,5.0
+173,Perempuan,17,54.0,81.6,10500.0,6.0,2.605,Normal,0.677,Normal,10.0,Normal,Normal,17,11.0
+174,Perempuan,23,48.0,76.5,8500.0,5.0,-0.616,Normal,-2.842,Stunting,10.0,Normal,Normal,23,18.0
+175,Laki-laki,9,50.0,74.0,8500.0,3.0,0.061,Normal,0.906,Normal,43.09,STUNTING LOW,Stunting,9,6.0
+176,Perempuan,6,36.0,103.9,15000.0,6.0,-7.058,Stunting,16.841,Normal,10.0,Normal,Normal,6,0.0
+177,Perempuan,18,50.0,79.0,10000.0,7.0,0.458,Normal,-0.588,Normal,10.0,Normal,Normal,18,11.0
+178,Perempuan,22,49.0,78.0,9000.0,6.0,-0.079,Normal,-2.117,Stunting,10.0,Normal,Normal,22,16.0
+179,Perempuan,14,47.0,74.1,6300.0,6.0,-1.153,Normal,-0.85,Normal,29.62,STUNTING LOW,Stunting,14,8.0
+180,Laki-laki,21,49.2,91.2,12500.0,6.0,-0.361,Normal,2.11,Normal,10.0,Normal,Normal,21,15.0
+181,Laki-laki,16,48.2,89.2,10200.0,6.0,-0.89,Normal,3.478,Normal,10.0,Normal,Normal,16,10.0
+182,Perempuan,18,49.0,78.3,9400.0,0.25,-0.079,Normal,-0.829,Normal,35.0,STUNTING LOW,Stunting,18,17.75
+183,Laki-laki,7,50.0,67.8,8300.0,6.0,0.061,Normal,-0.628,Normal,19.61,Normal,Normal,7,1.0
+184,Laki-laki,4,49.0,64.5,6200.0,0.25,-0.467,Normal,0.295,Normal,62.5,STUNTING MEDIUM,Stunting,4,3.75
+185,Laki-laki,22,52.0,85.6,12500.0,6.0,1.118,Normal,-0.153,Normal,10.0,Normal,Normal,22,16.0
+186,Laki-laki,17,50.0,80.0,11500.0,5.0,0.061,Normal,-0.473,Normal,10.0,Normal,Normal,17,12.0
+187,Perempuan,12,52.0,74.8,9900.0,4.0,1.531,Normal,0.305,Normal,14.37,Normal,Normal,12,8.0
+188,Perempuan,14,35.7,63.6,6700.0,10.0,-7.219,Stunting,-4.762,Stunting,57.87,STUNTING MEDIUM,Stunting,14,4.0
+189,Laki-laki,17,50.2,79.8,9800.0,6.0,0.167,Normal,-0.549,Normal,10.0,Normal,Normal,17,11.0
+190,Perempuan,13,49.0,72.2,7800.0,5.0,-0.079,Normal,-1.148,Normal,19.12,Normal,Normal,13,8.0
+191,Perempuan,16,48.0,86.3,10600.0,0.25,-0.616,Normal,2.754,Normal,35.0,STUNTING LOW,Stunting,16,15.75
+192,Laki-laki,22,49.2,90.1,14200.0,6.0,-0.361,Normal,1.381,Normal,10.0,Normal,Normal,22,16.0
+193,Perempuan,13,48.2,88.7,9800.0,7.0,-0.509,Normal,5.127,Normal,10.0,Normal,Normal,13,6.0
+194,Laki-laki,21,48.7,89.6,15500.0,6.0,-0.626,Normal,1.554,Normal,10.0,Normal,Normal,21,15.0
+195,Laki-laki,23,48.0,82.0,13800.0,5.0,-0.995,Normal,-1.65,Normal,10.0,Normal,Normal,23,18.0
+196,Laki-laki,13,50.0,80.5,10600.0,8.0,0.061,Normal,1.476,Normal,22.5,Normal,Normal,13,5.0
+197,Perempuan,11,47.3,69.8,8900.0,6.0,-0.992,Normal,-1.179,Normal,17.62,Normal,Normal,11,5.0
+198,Perempuan,22,45.0,80.0,14800.0,12.0,-2.227,Stunting,-1.476,Normal,27.67,STUNTING LOW,Stunting,22,10.0
+199,Perempuan,17,46.0,69.0,7800.0,6.0,-1.69,Normal,-3.745,Stunting,36.91,STUNTING LOW,Stunting,17,11.0
+200,Laki-laki,6,52.1,71.2,8900.0,6.0,1.17,Normal,1.671,Normal,16.86,Normal,Normal,6,0.0
+201,Laki-laki,13,50.1,80.4,11800.0,2.0,0.114,Normal,1.435,Normal,35.0,STUNTING LOW,Stunting,13,11.0
+202,Perempuan,8,49.1,75.8,9900.0,6.0,-0.026,Normal,2.981,Normal,10.0,Normal,Normal,8,2.0
+203,Perempuan,15,48.0,74.5,9500.0,6.0,-0.616,Normal,-1.099,Normal,14.24,Normal,Normal,15,9.0
+204,Laki-laki,17,50.0,97.2,11000.0,6.0,0.061,Normal,6.041,Normal,10.0,Normal,Normal,17,11.0
+205,Perempuan,14,47.0,78.0,8000.0,6.0,-1.153,Normal,0.603,Normal,10.0,Normal,Normal,14,8.0
+206,Laki-laki,15,49.0,77.0,9050.0,0.5,-0.467,Normal,-0.848,Normal,44.04,STUNTING LOW,Stunting,15,14.5
+207,Laki-laki,7,50.0,68.7,7600.0,5.0,0.061,Normal,-0.214,Normal,21.66,Normal,Normal,7,2.0
+208,Perempuan,14,59.0,72.0,7500.0,6.0,5.289,Normal,-1.632,Normal,24.27,STUNTING LOW,Stunting,14,8.0
+209,Laki-laki,6,50.0,63.2,7300.0,0.25,0.061,Normal,-2.067,Stunting,53.9,STUNTING MEDIUM,Stunting,6,5.75
+210,Laki-laki,23,51.0,90.0,11900.0,7.0,0.589,Normal,1.021,Normal,10.0,Normal,Normal,23,16.0
+211,Laki-laki,10,44.0,51.0,6600.0,0.25,-3.108,Stunting,-9.751,Stunting,90.0,STUNTING HIGH,Stunting,10,9.75
+212,Perempuan,15,50.0,74.0,9400.0,6.0,0.458,Normal,-1.281,Normal,18.11,Normal,Normal,15,9.0
+213,Perempuan,18,50.0,63.2,11900.0,6.0,0.458,Normal,-6.029,Stunting,37.5,STUNTING LOW,Stunting,18,12.0
+214,Laki-laki,3,39.0,57.3,4950.0,0.25,-5.749,Stunting,-2.02,Stunting,90.0,STUNTING HIGH,Stunting,3,2.75
+215,Laki-laki,23,47.0,75.9,8200.0,0.5,-1.524,Normal,-3.686,Stunting,40.21,STUNTING LOW,Stunting,23,22.5
+216,Laki-laki,23,49.0,81.5,9800.0,6.0,-0.467,Normal,-1.817,Normal,10.0,Normal,Normal,23,17.0
+217,Perempuan,18,49.0,68.4,7400.0,6.0,-0.079,Normal,-4.238,Stunting,36.41,STUNTING LOW,Stunting,18,12.0
+218,Perempuan,16,47.0,80.1,9000.0,6.0,-1.153,Normal,0.535,Normal,10.0,Normal,Normal,16,10.0
+219,Perempuan,16,46.0,81.3,9600.0,6.0,-1.69,Normal,0.964,Normal,10.0,Normal,Normal,16,10.0
+220,Perempuan,17,49.1,79.8,8300.0,3.0,-0.026,Normal,0.045,Normal,35.0,STUNTING LOW,Stunting,17,14.0
+221,Perempuan,20,50.1,70.2,9800.0,6.0,0.511,Normal,-4.15,Stunting,28.18,STUNTING LOW,Stunting,20,14.0
+222,Perempuan,20,51.0,80.0,8900.0,6.0,0.994,Normal,-0.897,Normal,10.0,Normal,Normal,20,14.0
+223,Laki-laki,21,51.0,80.5,10000.0,6.0,0.589,Normal,-1.613,Normal,10.0,Normal,Normal,21,15.0
+224,Laki-laki,3,49.0,63.0,5900.0,2.0,-0.467,Normal,0.768,Normal,62.55,STUNTING MEDIUM,Stunting,3,1.0
+225,Perempuan,6,50.0,63.9,6150.0,6.0,0.458,Normal,-0.808,Normal,37.73,STUNTING LOW,Stunting,6,0.0
+226,Laki-laki,16,50.0,77.2,9700.0,6.0,0.061,Normal,-1.165,Normal,21.58,Normal,Normal,16,10.0
+227,Perempuan,16,49.0,77.8,9150.0,6.0,-0.079,Normal,-0.288,Normal,10.0,Normal,Normal,16,10.0
+228,Perempuan,23,49.0,81.6,9650.0,6.0,-0.079,Normal,-1.235,Normal,10.0,Normal,Normal,23,17.0
+229,Laki-laki,8,50.0,65.4,6070.0,6.0,0.061,Normal,-2.357,Stunting,50.0,STUNTING LOW,Stunting,8,2.0
+230,Perempuan,14,50.0,72.9,9200.0,2.0,0.458,Normal,-1.297,Normal,45.1,STUNTING LOW,Stunting,14,12.0
+231,Laki-laki,8,50.0,58.7,6900.0,6.0,0.061,Normal,-5.395,Stunting,31.94,STUNTING LOW,Stunting,8,2.0
+232,Laki-laki,3,50.0,63.2,7600.0,0.25,0.061,Normal,0.866,Normal,53.9,STUNTING MEDIUM,Stunting,3,2.75
+233,Laki-laki,15,48.0,77.9,11300.0,6.0,-0.995,Normal,-0.492,Normal,15.5,Normal,Normal,15,9.0
+234,Laki-laki,3,52.0,58.6,4650.0,6.0,1.118,Normal,-1.384,Normal,63.73,STUNTING MEDIUM,Stunting,3,0.0
+235,Laki-laki,15,49.0,74.9,10600.0,6.0,-0.467,Normal,-1.678,Normal,29.16,STUNTING LOW,Stunting,15,9.0
+236,Laki-laki,21,52.0,82.3,13550.0,6.0,1.118,Normal,-0.986,Normal,10.0,Normal,Normal,21,15.0
+237,Perempuan,18,51.0,81.5,11650.0,6.0,0.994,Normal,0.273,Normal,10.0,Normal,Normal,18,12.0
+238,Perempuan,23,52.0,81.0,8100.0,6.0,1.531,Normal,-1.424,Normal,10.0,Normal,Normal,23,17.0
+239,Laki-laki,22,51.0,84.2,11700.0,7.0,0.589,Normal,-0.63,Normal,10.0,Normal,Normal,22,15.0
+240,Perempuan,8,49.0,64.0,6500.0,6.0,-0.079,Normal,-2.008,Stunting,31.03,STUNTING LOW,Stunting,8,2.0
+241,Laki-laki,20,49.0,79.0,9900.0,5.0,-0.467,Normal,-1.848,Normal,10.0,Normal,Normal,20,15.0
+242,Perempuan,20,51.0,84.6,15300.0,6.0,0.994,Normal,0.629,Normal,10.0,Normal,Normal,20,14.0
+243,Laki-laki,20,47.0,83.3,10700.0,0.25,-1.524,Normal,-0.32,Normal,35.0,STUNTING LOW,Stunting,20,19.75
+244,Perempuan,11,56.1,72.0,8000.0,6.0,3.732,Normal,-0.306,Normal,15.01,Normal,Normal,11,5.0
+245,Laki-laki,23,41.0,85.2,12400.0,6.0,-4.693,Stunting,-0.581,Normal,10.0,Normal,Normal,23,17.0
+246,Perempuan,18,50.2,85.0,10550.0,0.25,0.565,Normal,1.478,Normal,35.0,STUNTING LOW,Stunting,18,17.75
+247,Laki-laki,22,51.0,83.4,9400.0,6.0,0.589,Normal,-0.902,Normal,10.0,Normal,Normal,22,16.0
+248,Laki-laki,19,47.0,96.4,15400.0,6.0,-1.524,Normal,4.776,Normal,10.0,Normal,Normal,19,13.0
+249,Laki-laki,18,53.0,73.6,8200.0,6.0,1.646,Normal,-3.21,Stunting,33.74,STUNTING LOW,Stunting,18,12.0
+250,Laki-laki,5,47.6,66.6,7550.0,0.25,-1.207,Normal,0.33,Normal,48.27,STUNTING LOW,Stunting,5,4.75
+251,Laki-laki,10,50.0,67.8,7300.0,6.0,0.061,Normal,-2.399,Stunting,21.61,Normal,Normal,10,4.0
+252,Perempuan,23,49.0,79.6,8850.0,6.0,-0.079,Normal,-1.865,Normal,10.0,Normal,Normal,23,17.0
+253,Perempuan,19,54.0,78.7,9200.0,6.0,2.605,Normal,-1.02,Normal,10.0,Normal,Normal,19,13.0
+254,Laki-laki,22,52.0,80.4,11300.0,6.0,1.118,Normal,-1.925,Normal,10.0,Normal,Normal,22,16.0
+255,Perempuan,12,49.0,70.9,8700.0,6.0,-0.079,Normal,-1.21,Normal,17.29,Normal,Normal,12,6.0
+256,Perempuan,22,48.0,79.4,7200.0,6.0,-0.616,Normal,-1.668,Normal,12.3,Normal,Normal,22,16.0
+257,Laki-laki,18,48.6,80.7,8900.0,6.0,-0.678,Normal,-0.578,Normal,10.0,Normal,Normal,18,12.0
+258,Perempuan,18,46.7,68.7,8010.0,1.0,-1.314,Normal,-4.135,Stunting,49.05,STUNTING LOW,Stunting,18,17.0
+259,Perempuan,6,48.6,61.5,5090.0,0.25,-0.294,Normal,-1.867,Normal,59.2,STUNTING MEDIUM,Stunting,6,5.75
+260,Laki-laki,21,49.0,74.5,10000.0,0.25,-0.467,Normal,-3.7,Stunting,43.61,STUNTING LOW,Stunting,21,20.75
+261,Perempuan,4,41.0,54.2,5280.0,0.25,-4.374,Stunting,-3.645,Stunting,66.35,STUNTING MEDIUM,Stunting,4,3.75
+262,Perempuan,9,48.0,66.9,7750.0,0.25,-0.616,Normal,-1.343,Normal,45.22,STUNTING LOW,Stunting,9,8.75
+263,Laki-laki,7,49.0,64.4,7750.0,6.0,-0.467,Normal,-2.195,Stunting,23.99,STUNTING LOW,Stunting,7,1.0
+264,Laki-laki,7,49.0,68.5,8700.0,6.0,-0.467,Normal,-0.306,Normal,19.08,Normal,Normal,7,1.0
+265,Laki-laki,21,48.9,72.2,8200.0,6.0,-0.52,Normal,-4.5,Stunting,31.44,STUNTING LOW,Stunting,21,15.0
+266,Perempuan,23,48.5,83.5,9900.0,6.0,-0.348,Normal,-0.637,Normal,10.0,Normal,Normal,23,17.0
+267,Laki-laki,23,49.0,80.0,10000.0,0.25,-0.467,Normal,-2.317,Stunting,35.0,STUNTING LOW,Stunting,23,22.75
+268,Perempuan,13,48.2,73.3,8100.0,7.0,-0.509,Normal,-0.729,Normal,17.55,Normal,Normal,13,6.0
+269,Perempuan,16,49.0,78.0,9050.0,0.25,-0.079,Normal,-0.217,Normal,35.0,STUNTING LOW,Stunting,16,15.75
+270,Perempuan,18,49.0,79.0,10450.0,6.0,-0.079,Normal,-0.588,Normal,10.0,Normal,Normal,18,12.0
+271,Perempuan,11,49.0,84.0,11100.0,6.0,-0.079,Normal,4.455,Normal,10.0,Normal,Normal,11,5.0
+272,Perempuan,9,48.0,75.3,9400.0,6.0,-0.616,Normal,2.135,Normal,10.0,Normal,Normal,9,3.0
+273,Laki-laki,11,50.1,76.5,12150.0,6.0,0.114,Normal,0.842,Normal,13.87,Normal,Normal,11,5.0
+274,Laki-laki,12,49.0,70.4,8800.0,6.0,-0.467,Normal,-2.251,Stunting,21.92,Normal,Normal,12,6.0
+275,Laki-laki,10,47.0,70.8,8000.0,6.0,-1.524,Normal,-1.086,Normal,19.59,Normal,Normal,10,4.0
+276,Laki-laki,16,47.0,72.5,10200.0,6.0,-1.524,Normal,-2.984,Stunting,32.69,STUNTING LOW,Stunting,16,10.0
+277,Perempuan,13,50.0,75.8,7200.0,5.0,0.458,Normal,0.221,Normal,14.69,Normal,Normal,13,8.0
+278,Laki-laki,15,53.0,83.1,11600.0,5.0,1.646,Normal,1.563,Normal,10.0,Normal,Normal,15,10.0
+279,Perempuan,21,50.0,85.0,9800.0,6.0,0.458,Normal,0.435,Normal,10.0,Normal,Normal,21,15.0
+280,Laki-laki,13,50.0,74.0,7500.0,6.0,0.061,Normal,-1.203,Normal,21.54,Normal,Normal,13,7.0
+281,Laki-laki,12,50.2,85.2,9300.0,7.0,0.167,Normal,3.977,Normal,10.0,Normal,Normal,12,5.0
+282,Laki-laki,2,49.0,60.8,5700.0,6.0,-0.467,Normal,1.187,Normal,55.8,STUNTING MEDIUM,Stunting,2,0.0
+283,Laki-laki,21,50.1,84.2,11200.0,7.0,0.114,Normal,-0.325,Normal,10.0,Normal,Normal,21,14.0
+284,Laki-laki,14,51.0,76.7,10750.0,6.0,0.589,Normal,-0.545,Normal,22.96,STUNTING LOW,Stunting,14,8.0
+285,Perempuan,10,49.0,75.4,8520.0,6.0,-0.079,Normal,1.588,Normal,10.0,Normal,Normal,10,4.0
+286,Laki-laki,12,49.0,75.0,10000.0,6.0,-0.467,Normal,-0.315,Normal,17.0,Normal,Normal,12,6.0
+287,Perempuan,12,50.0,73.0,8800.0,6.0,0.458,Normal,-0.394,Normal,14.12,Normal,Normal,12,6.0
+288,Laki-laki,2,50.0,59.0,6000.0,6.0,0.061,Normal,0.287,Normal,59.84,STUNTING MEDIUM,Stunting,2,0.0
+289,Perempuan,11,51.0,86.0,10000.0,6.0,0.994,Normal,5.248,Normal,10.0,Normal,Normal,11,5.0
+290,Perempuan,7,48.0,80.5,10500.0,12.0,-0.616,Normal,5.707,Normal,35.0,STUNTING LOW,Stunting,7,0.0
+291,Perempuan,19,49.4,85.0,11060.0,6.0,0.135,Normal,1.109,Normal,10.0,Normal,Normal,19,13.0
+292,Perempuan,22,49.0,84.2,11600.0,6.0,-0.079,Normal,-0.129,Normal,10.0,Normal,Normal,22,16.0
+293,Perempuan,12,49.0,89.1,13900.0,6.0,-0.079,Normal,5.858,Normal,10.0,Normal,Normal,12,6.0
+294,Laki-laki,17,51.0,83.2,11200.0,6.0,0.589,Normal,0.739,Normal,10.0,Normal,Normal,17,11.0
+295,Laki-laki,19,50.0,84.0,11200.0,6.0,0.061,Normal,0.275,Normal,10.0,Normal,Normal,19,13.0
+296,Perempuan,19,49.0,83.8,11300.0,6.0,-0.079,Normal,0.704,Normal,10.0,Normal,Normal,19,13.0
+297,Perempuan,19,50.0,82.0,11200.0,6.0,0.458,Normal,0.095,Normal,10.0,Normal,Normal,19,13.0
+298,Laki-laki,3,50.0,61.5,6800.0,6.0,0.061,Normal,0.035,Normal,22.5,Normal,Normal,3,0.0
+299,Laki-laki,15,50.0,80.0,10400.0,10.0,0.061,Normal,0.338,Normal,35.0,STUNTING LOW,Stunting,15,5.0
+300,Laki-laki,9,49.1,74.5,10200.0,6.0,-0.414,Normal,1.128,Normal,15.49,Normal,Normal,9,3.0
+301,Laki-laki,21,50.0,79.0,9800.0,6.0,0.061,Normal,-2.134,Stunting,10.0,Normal,Normal,21,15.0
+302,Laki-laki,15,48.0,73.0,8900.0,6.0,-0.995,Normal,-2.429,Stunting,29.22,STUNTING LOW,Stunting,15,9.0
+303,Perempuan,14,50.0,74.5,7750.0,6.0,0.458,Normal,-0.701,Normal,13.93,Normal,Normal,14,8.0
+304,Perempuan,19,50.0,83.5,9800.0,6.0,0.458,Normal,0.602,Normal,10.0,Normal,Normal,19,13.0
+305,Laki-laki,19,52.0,81.0,10400.0,6.0,1.118,Normal,-0.814,Normal,10.0,Normal,Normal,19,13.0
+306,Perempuan,8,46.0,65.0,8000.0,0.25,-1.69,Normal,-1.586,Normal,45.88,STUNTING LOW,Stunting,8,7.75
+307,Perempuan,10,50.0,68.0,9000.0,6.0,0.458,Normal,-1.411,Normal,18.43,Normal,Normal,10,4.0
+308,Perempuan,16,51.0,79.5,10600.0,6.0,0.994,Normal,0.32,Normal,10.0,Normal,Normal,16,10.0
+309,Perempuan,10,48.0,69.0,7800.0,6.0,-0.616,Normal,-1.006,Normal,17.58,Normal,Normal,10,4.0
+310,Laki-laki,22,52.0,82.6,10030.0,12.0,1.118,Normal,-1.175,Normal,35.0,STUNTING LOW,Stunting,22,10.0
+311,Perempuan,16,47.0,75.2,9300.0,6.0,-1.153,Normal,-1.219,Normal,10.0,Normal,Normal,16,10.0
+312,Laki-laki,1,40.6,54.1,4030.0000000000005,0.25,-4.904,Stunting,-0.321,Normal,90.0,STUNTING HIGH,Stunting,1,0.75
+313,Perempuan,18,48.0,79.0,9900.0,6.0,-0.616,Normal,-0.588,Normal,10.0,Normal,Normal,18,12.0
+314,Laki-laki,21,50.0,81.6,11010.0,6.0,0.061,Normal,-1.23,Normal,10.0,Normal,Normal,21,15.0
+315,Laki-laki,19,50.0,73.3,8800.0,6.0,0.061,Normal,-3.608,Stunting,32.36,STUNTING LOW,Stunting,19,13.0
+316,Laki-laki,10,52.0,71.0,8000.0,6.0,1.118,Normal,-0.998,Normal,19.44,Normal,Normal,10,4.0
+317,Perempuan,13,49.0,78.6,9000.0,6.0,-0.079,Normal,1.286,Normal,10.0,Normal,Normal,13,7.0
+318,Laki-laki,8,51.0,75.7,10300.0,6.0,0.589,Normal,2.313,Normal,13.7,Normal,Normal,8,2.0
+319,Laki-laki,22,49.0,79.6,9100.0,6.0,-0.467,Normal,-2.197,Stunting,10.0,Normal,Normal,22,16.0
+320,Laki-laki,18,51.0,82.3,11100.0,6.0,0.589,Normal,0.015,Normal,10.0,Normal,Normal,18,12.0
+321,Laki-laki,20,48.0,75.5,7900.0,6.0,-0.995,Normal,-3.092,Stunting,23.94,STUNTING LOW,Stunting,20,14.0
+322,Perempuan,20,52.0,76.9,8500.0,6.0,1.531,Normal,-1.926,Normal,10.0,Normal,Normal,20,14.0
+323,Perempuan,19,45.0,77.0,9600.0,6.0,-2.227,Stunting,-1.595,Normal,10.0,Normal,Normal,19,13.0
+324,Perempuan,0,49.0,49.5,3400.0,0.25,-0.079,Normal,0.189,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+325,Perempuan,9,50.0,72.0,8400.0,6.0,0.458,Normal,0.769,Normal,13.97,Normal,Normal,9,3.0
+326,Perempuan,5,48.0,60.6,5600.0,1.0,-0.616,Normal,-1.547,Normal,62.5,STUNTING MEDIUM,Stunting,5,4.0
+327,Perempuan,8,50.9,69.4,7750.0,0.25,0.941,Normal,0.275,Normal,42.22,STUNTING LOW,Stunting,8,7.75
+328,Perempuan,20,48.0,78.6,10600.0,0.25,-0.616,Normal,-1.362,Normal,35.0,STUNTING LOW,Stunting,20,19.75
+329,Perempuan,0,49.0,51.1,3300.0,0.25,-0.079,Normal,1.048,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+330,Laki-laki,0,48.0,49.3,3170.0,0.25,-0.995,Normal,-0.309,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+331,Laki-laki,22,49.0,82.8,11000.0,4.0,-0.467,Normal,-1.107,Normal,10.0,Normal,Normal,22,18.0
+332,Laki-laki,6,50.0,68.5,7300.0,0.25,0.061,Normal,0.409,Normal,45.57,STUNTING LOW,Stunting,6,5.75
+333,Laki-laki,8,50.0,70.5,7850.0,6.0,0.061,Normal,-0.045,Normal,18.39,Normal,Normal,8,2.0
+334,Perempuan,13,50.0,70.4,7400.0,7.0,0.458,Normal,-1.832,Normal,21.17,Normal,Normal,13,6.0
+335,Perempuan,8,48.0,69.9,8300.0,6.0,-0.616,Normal,0.486,Normal,15.59,Normal,Normal,8,2.0
+336,Laki-laki,4,49.0,65.4,7500.0,0.25,-0.467,Normal,0.728,Normal,50.13,STUNTING MEDIUM,Stunting,4,3.75
+337,Perempuan,8,50.0,66.0,7200.0,0.25,0.458,Normal,-1.163,Normal,46.63,STUNTING LOW,Stunting,8,7.75
+338,Laki-laki,16,50.0,80.5,12250.0,6.0,0.061,Normal,0.112,Normal,10.0,Normal,Normal,16,10.0
+339,Perempuan,17,49.0,80.0,10750.0,1.0,-0.079,Normal,0.115,Normal,35.0,STUNTING LOW,Stunting,17,16.0
+340,Laki-laki,20,46.0,78.4,13000.0,3.0,-2.052,Stunting,-2.061,Stunting,35.09,STUNTING LOW,Stunting,20,17.0
+341,Laki-laki,4,49.0,62.0,6150.0,0.25,-0.467,Normal,-0.906,Normal,62.5,STUNTING MEDIUM,Stunting,4,3.75
+342,Laki-laki,3,49.1,62.3,6010.0,1.0,-0.414,Normal,0.426,Normal,62.71,STUNTING MEDIUM,Stunting,3,2.0
+343,Perempuan,19,51.0,81.5,11500.0,6.0,0.994,Normal,-0.074,Normal,10.0,Normal,Normal,19,13.0
+344,Laki-laki,23,49.0,82.5,10650.0,6.0,-0.467,Normal,-1.483,Normal,10.0,Normal,Normal,23,17.0
+345,Perempuan,22,49.0,84.0,11500.0,6.0,-0.079,Normal,-0.194,Normal,10.0,Normal,Normal,22,16.0
+346,Perempuan,21,47.0,79.0,9850.0,7.0,-1.153,Normal,-1.521,Normal,10.0,Normal,Normal,21,14.0
+347,Perempuan,16,48.0,73.1,7900.0,0.25,-0.616,Normal,-1.97,Normal,45.61,STUNTING LOW,Stunting,16,15.75
+348,Perempuan,16,54.0,78.6,10600.0,7.0,2.605,Normal,-0.002,Normal,10.0,Normal,Normal,16,9.0
+349,Laki-laki,13,52.0,71.5,9100.0,6.0,1.118,Normal,-2.234,Stunting,23.73,STUNTING LOW,Stunting,13,7.0
+350,Perempuan,14,52.0,71.1,8090.0,4.0,1.531,Normal,-1.968,Normal,30.0,STUNTING LOW,Stunting,14,10.0
+351,Perempuan,22,49.0,78.8,10000.0,0.25,-0.079,Normal,-1.86,Normal,35.0,STUNTING LOW,Stunting,22,21.75
+352,Laki-laki,23,47.0,80.7,10500.0,0.25,-1.524,Normal,-2.084,Stunting,35.0,STUNTING LOW,Stunting,23,22.75
+353,Perempuan,3,48.0,59.5,5300.0,0.25,-0.616,Normal,-0.144,Normal,62.38,STUNTING MEDIUM,Stunting,3,2.75
+354,Laki-laki,13,50.0,74.5,10000.0,2.0,0.061,Normal,-0.997,Normal,46.18,STUNTING LOW,Stunting,13,11.0
+355,Perempuan,3,49.0,57.2,5400.0,0.25,-0.079,Normal,-1.236,Normal,63.26,STUNTING MEDIUM,Stunting,3,2.75
+356,Laki-laki,8,48.0,64.4,6650.0,6.0,-0.995,Normal,-2.811,Stunting,50.0,STUNTING LOW,Stunting,8,2.0
+357,Perempuan,16,48.0,75.0,8500.0,0.25,-0.616,Normal,-1.29,Normal,35.0,STUNTING LOW,Stunting,16,15.75
+358,Perempuan,15,49.0,75.0,8900.0,0.25,-0.079,Normal,-0.916,Normal,35.0,STUNTING LOW,Stunting,15,14.75
+359,Laki-laki,16,49.0,78.9,9100.0,6.0,-0.467,Normal,-0.507,Normal,10.0,Normal,Normal,16,10.0
+360,Perempuan,12,48.0,72.2,7550.0,6.0,-0.616,Normal,-0.705,Normal,15.45,Normal,Normal,12,6.0
+361,Laki-laki,21,47.0,83.5,10050.0,6.0,-1.524,Normal,-0.569,Normal,10.0,Normal,Normal,21,15.0
+362,Laki-laki,17,47.0,77.0,10900.0,6.0,-1.524,Normal,-1.609,Normal,21.84,Normal,Normal,17,11.0
+363,Perempuan,17,49.2,76.0,8400.0,6.0,0.028,Normal,-1.289,Normal,10.0,Normal,Normal,17,11.0
+364,Laki-laki,21,50.0,89.7,13100.0,7.0,0.061,Normal,1.588,Normal,10.0,Normal,Normal,21,14.0
+365,Perempuan,17,48.0,73.3,7200.0,6.0,-0.616,Normal,-2.236,Stunting,32.45,STUNTING LOW,Stunting,17,11.0
+366,Perempuan,22,52.0,82.0,10600.0,5.0,1.531,Normal,-0.835,Normal,10.0,Normal,Normal,22,17.0
+367,Laki-laki,9,50.0,70.5,9100.0,6.0,0.061,Normal,-0.655,Normal,19.05,Normal,Normal,9,3.0
+368,Perempuan,21,50.0,99.1,18100.0,6.0,0.458,Normal,5.032,Normal,10.0,Normal,Normal,21,15.0
+369,Laki-laki,18,50.0,69.9,9080.0,6.0,0.061,Normal,-4.582,Stunting,37.5,STUNTING LOW,Stunting,18,12.0
+370,Laki-laki,15,49.0,69.2,10050.0,6.0,-0.467,Normal,-3.931,Stunting,29.22,STUNTING LOW,Stunting,15,9.0
+371,Laki-laki,8,44.0,72.7,7500.0,6.0,-3.108,Stunting,0.952,Normal,16.68,Normal,Normal,8,2.0
+372,Perempuan,8,51.0,68.4,8000.0,6.0,0.994,Normal,-0.148,Normal,16.81,Normal,Normal,8,2.0
+373,Laki-laki,18,48.0,73.5,9200.0,6.0,-0.995,Normal,-3.247,Stunting,34.02,STUNTING LOW,Stunting,18,12.0
+374,Laki-laki,5,57.0,67.2,8300.0,2.0,3.759,Normal,0.614,Normal,47.39,STUNTING LOW,Stunting,5,3.0
+375,Perempuan,13,49.0,72.3,9700.0,6.0,-0.079,Normal,-1.11,Normal,18.99,Normal,Normal,13,7.0
+376,Laki-laki,9,50.0,77.1,10900.0,6.0,0.061,Normal,2.287,Normal,12.17,Normal,Normal,9,3.0
+377,Laki-laki,18,48.0,81.3,9700.0,6.0,-0.995,Normal,-0.355,Normal,10.0,Normal,Normal,18,12.0
+378,Perempuan,16,46.0,72.8,8600.0,1.0,-1.69,Normal,-2.078,Stunting,46.67,STUNTING LOW,Stunting,16,15.0
+379,Laki-laki,23,49.0,80.5,10210.0,6.0,-0.467,Normal,-2.15,Stunting,10.0,Normal,Normal,23,17.0
+380,Laki-laki,8,50.0,70.8,10500.0,6.0,0.061,Normal,0.091,Normal,18.18,Normal,Normal,8,2.0
+381,Perempuan,15,47.0,79.1,9000.0,6.0,-1.153,Normal,0.58,Normal,10.0,Normal,Normal,15,9.0
+382,Perempuan,20,51.0,81.0,8900.0,6.0,0.994,Normal,-0.565,Normal,10.0,Normal,Normal,20,14.0
+383,Laki-laki,0,54.0,56.0,4000.0,6.0,2.174,Normal,3.231,Normal,35.0,STUNTING LOW,Stunting,0,0.0
+384,Perempuan,13,48.0,70.0,5400.0,6.0,-0.616,Normal,-1.984,Normal,48.27,STUNTING LOW,Stunting,13,7.0
+385,Laki-laki,3,50.0,58.5,6800.0,5.0,0.061,Normal,-1.433,Normal,22.5,Normal,Normal,3,0.0
+386,Perempuan,13,48.0,74.2,8300.0,6.0,-0.616,Normal,-0.387,Normal,15.81,Normal,Normal,13,7.0
+387,Perempuan,21,52.0,85.0,11000.0,6.0,1.531,Normal,0.435,Normal,10.0,Normal,Normal,21,15.0
+388,Laki-laki,8,53.0,70.3,8100.0,6.0,1.646,Normal,-0.136,Normal,18.53,Normal,Normal,8,2.0
+389,Perempuan,8,49.0,64.5,7300.0,3.0,-0.079,Normal,-1.797,Normal,48.71,STUNTING LOW,Stunting,8,5.0

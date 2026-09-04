@@ -1,0 +1,47 @@
+ID_balita,usia_bulan,usia_label,jenis_kelamin,tinggi_badan_cm,bbl_gram,pbl_cm,mpasi_bulan,mpasi_label,L,M,S,z_score,label_who,risk_score,priority_flag,fuzzy_label
+ ,7,7 bulan,2,62.6,3000.0,49.0,5.0,5 bulan,1.0,67.2873,0.03441,-2.024,Stunting,5.0,Normal,Normal
+735060,5,5 bulan,2,58.6,3500.0,51.0,6.0,6 bulan,1.0,64.0301,0.03463,-2.449,Stunting,5.0,Normal,Normal
+737102,19,19 bulan,1,75.9,3000.0,50.0,6.0,6 bulan,1.0,83.2418,0.0331,-2.665,Stunting,5.0,Normal,Normal
+737206,21,21 bulan,2,76.5,3000.0,50.0,6.0,6 bulan,1.0,83.6654,0.03666,-2.336,Stunting,5.0,Normal,Normal
+737246,19,19 bulan,1,74.5,3400.0,48.0,6.0,6 bulan,1.0,83.2418,0.0331,-3.173,Stunting,12.5,Normal,Normal
+737356,10,10 bulan,2,66.5,3400.0,49.0,6.0,6 bulan,1.0,71.4818,0.03452,-2.019,Stunting,5.0,Normal,Normal
+737409,17,17 bulan,2,67.2,2900.0,50.0,6.0,6 bulan,1.0,79.671,0.03576,-4.377,Stunting,5.0,Normal,Normal
+737587,20,20 bulan,1,78.2,3000.0,48.8,6.0,6 bulan,1.0,84.1996,0.03342,-2.132,Stunting,6.5,Normal,Normal
+738027,11,11 bulan,2,65.0,3200.0,50.0,6.0,6 bulan,1.0,72.771,0.03464,-3.083,Stunting,5.0,Normal,Normal
+739005,19,19 bulan,2,72.1,3105.0,50.0,6.0,6 bulan,1.0,81.7182,0.0362,-3.251,Stunting,5.0,Normal,Normal
+741512,14,14 bulan,2,70.3,3500.0,53.0,6.0,6 bulan,1.0,76.3817,0.03514,-2.266,Stunting,5.0,Normal,Normal
+741871,20,20 bulan,1,77.0,2700.0,49.0,6.0,6 bulan,1.0,84.1996,0.03342,-2.559,Stunting,10.0,Normal,Normal
+742073,16,16 bulan,2,71.3,3200.0,50.0,6.0,6 bulan,1.0,78.6055,0.03555,-2.614,Stunting,5.0,Normal,Normal
+742613,10,10 bulan,1,68.5,3200.0,50.1,6.0,6 bulan,1.0,73.2812,0.03118,-2.093,Stunting,5.0,Normal,Normal
+743111,20,20 bulan,1,77.9,3400.0,50.0,6.0,6 bulan,1.0,84.1996,0.03342,-2.239,Stunting,5.0,Normal,Normal
+743182,22,22 bulan,2,77.0,3800.0,50.0,6.0,6 bulan,1.0,84.604,0.03688,-2.437,Stunting,5.0,Normal,Normal
+743397,1,1 bulan,1,50.3,3520.0,50.0,0.25,<1 bulan,1.0,54.7244,0.03557,-2.273,Stunting,19.0,Normal,Normal
+743704,17,17 bulan,1,75.0,2900.0,50.0,6.0,6 bulan,1.0,81.2487,0.0325,-2.366,Stunting,5.0,Normal,Normal
+743858,21,21 bulan,2,76.7,2900.0,49.2,6.0,6 bulan,1.0,83.6654,0.03666,-2.271,Stunting,5.0,Normal,Normal
+744248,17,17 bulan,2,73.1,3600.0,48.0,6.0,6 bulan,1.0,79.671,0.03576,-2.306,Stunting,10.62,Normal,Normal
+744913,23,23 bulan,2,76.5,2800.0,48.0,5.0,5 bulan,1.0,85.5202,0.03711,-2.842,Stunting,12.5,Normal,Normal
+745123,22,22 bulan,2,78.0,2600.0,49.0,6.0,6 bulan,1.0,84.604,0.03688,-2.117,Stunting,15.0,Normal,Normal
+746858,18,18 bulan,2,63.2,3800.0,50.0,6.0,6 bulan,1.0,80.7079,0.03598,-6.029,Stunting,5.0,Normal,Normal
+746966,18,18 bulan,2,68.4,2540.0,49.0,6.0,6 bulan,1.0,80.7079,0.03598,-4.238,Stunting,18.0,Normal,Normal
+747090,20,20 bulan,2,70.2,3000.0,50.1,6.0,6 bulan,1.0,82.7036,0.03643,-4.15,Stunting,5.0,Normal,Normal
+747333,8,8 bulan,1,65.4,3000.0,50.0,6.0,6 bulan,1.0,70.5994,0.03124,-2.357,Stunting,5.0,Normal,Normal
+747354,8,8 bulan,1,58.7,3000.0,50.0,6.0,6 bulan,1.0,70.5994,0.03124,-5.395,Stunting,5.0,Normal,Normal
+747837,8,8 bulan,2,64.0,3400.0,49.0,6.0,6 bulan,1.0,68.7498,0.0344,-2.008,Stunting,5.0,Normal,Normal
+748400,18,18 bulan,1,73.6,3000.0,53.0,6.0,6 bulan,1.0,82.2587,0.03279,-3.21,Stunting,5.0,Normal,Normal
+ ,10,10 bulan,1,67.8,3000.0,50.0,6.0,6 bulan,1.0,73.2812,0.03118,-2.399,Stunting,5.0,Normal,Normal
+749487,21,21 bulan,1,74.5,3000.0,49.0,0.25,<1 bulan,1.0,85.1348,0.03376,-3.7,Stunting,20.0,Normal,Normal
+749621,7,7 bulan,1,64.4,2700.0,49.0,6.0,6 bulan,1.0,69.1645,0.03139,-2.195,Stunting,10.0,Normal,Normal
+749723,21,21 bulan,1,72.2,3100.0,48.9,6.0,6 bulan,1.0,85.1348,0.03376,-4.5,Stunting,5.75,Normal,Normal
+750835,12,12 bulan,1,70.4,2900.0,49.0,6.0,6 bulan,1.0,75.7488,0.03137,-2.251,Stunting,5.0,Normal,Normal
+752503,21,21 bulan,1,79.0,3100.0,50.0,6.0,6 bulan,1.0,85.1348,0.03376,-2.134,Stunting,5.0,Normal,Normal
+752541,15,15 bulan,1,73.0,2700.0,48.0,6.0,6 bulan,1.0,79.1458,0.03197,-2.429,Stunting,21.5,Normal,Normal
+753800,19,19 bulan,1,73.3,2300.0,50.0,6.0,6 bulan,1.0,83.2418,0.0331,-3.608,Stunting,20.0,Normal,Normal
+754360,22,22 bulan,1,79.6,2660.0,49.0,6.0,6 bulan,1.0,86.0477,0.0341,-2.197,Stunting,12.0,Normal,Normal
+754468,20,20 bulan,1,75.5,3200.0,48.0,6.0,6 bulan,1.0,84.1996,0.03342,-3.092,Stunting,12.5,Normal,Normal
+756243,13,13 bulan,1,71.5,4000.0,52.0,6.0,6 bulan,1.0,76.9186,0.03154,-2.234,Stunting,5.0,Normal,Normal
+756614,8,8 bulan,1,64.4,3300.0,48.0,6.0,6 bulan,1.0,70.5994,0.03124,-2.811,Stunting,12.5,Normal,Normal
+757014,17,17 bulan,2,73.3,2800.0,48.0,6.0,6 bulan,1.0,79.671,0.03576,-2.236,Stunting,12.5,Normal,Normal
+757467,18,18 bulan,1,69.9,3000.0,50.0,6.0,6 bulan,1.0,82.2587,0.03279,-4.582,Stunting,5.0,Normal,Normal
+757531,15,15 bulan,1,69.2,2909.0,49.0,6.0,6 bulan,1.0,79.1458,0.03197,-3.931,Stunting,5.0,Normal,Normal
+757591,18,18 bulan,1,73.5,2900.0,48.0,6.0,6 bulan,1.0,82.2587,0.03279,-3.247,Stunting,12.5,Normal,Normal
+757860,23,23 bulan,1,80.5,3000.0,49.0,6.0,6 bulan,1.0,86.941,0.03445,-2.15,Stunting,5.0,Normal,Normal

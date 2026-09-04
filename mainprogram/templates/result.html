@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Perhitungan — Stuntor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage-50: #f4f7f3;
+            --sage-100: #e6ece4;
+            --sage-200: #ccd9c7;
+            --sage-300: #a8bda1;
+            --sage-400: #7d9a77;
+            --sage-500: #5c7d58;
+            --sage-600: #476244;
+            --sage-700: #384f37;
+            --sage-800: #2d3f2d;
+            --sage-900: #1f2b1f;
+            --cream: #fafaf7;
+            --ink: #1a1f1a;
+            --mist: #f1f3ee;
+            --success: #5a8a56;
+            --warning: #c89a3b;
+            --danger: #c85c5c;
+            --critical: #a53f3f;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: var(--font-body); color: var(--ink); background: var(--cream); line-height: 1.5; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            padding: 20px 48px;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(250, 250, 247, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: var(--sage-800); text-decoration: none; }
+        .logo-mark {
+            width: 30px; height: 30px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--sage-500), var(--sage-700));
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 13px; font-weight: 700;
+        }
+        .nav-actions { display: flex; gap: 10px; align-items: center; }
+        .nav-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 9px 16px; border-radius: 100px; text-decoration: none;
+            font-size: 13px; font-weight: 600; transition: all 0.2s;
+        }
+        .nav-btn.ghost { color: var(--sage-700); border: 1px solid var(--sage-200); background: white; }
+        .nav-btn.ghost:hover { background: var(--sage-100); }
+        .nav-btn.solid { background: var(--sage-800); color: white; }
+        .nav-btn.solid:hover { background: var(--sage-900); }
+
+        .container {
+            max-width: 1200px; margin: 0 auto; padding: 48px 48px 80px;
+        }
+
+        /* HEADER */
+        .result-header {
+            margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end;
+            padding-bottom: 32px; border-bottom: 1px solid var(--sage-100);
+        }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 5px 12px; background: var(--sage-100); border-radius: 100px;
+            font-size: 11px; font-weight: 600; color: var(--sage-700); letter-spacing: 0.04em;
+            margin-bottom: 16px; text-transform: uppercase;
+        }
+        .eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sage-500); }
+        .result-header h1 {
+            font-family: var(--font-display); font-weight: 400; font-size: 48px;
+            line-height: 1.05; letter-spacing: -0.03em; color: var(--sage-900); margin-bottom: 10px;
+        }
+        .result-header h1 em { font-style: italic; color: var(--sage-600); font-weight: 300; }
+        .result-header p { font-size: 15px; color: var(--sage-700); }
+
+        /* INPUT SUMMARY */
+        .input-summary {
+            display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
+        }
+        .chip {
+            padding: 6px 12px; background: var(--sage-50); border: 1px solid var(--sage-100);
+            border-radius: 100px; font-size: 14px; color: var(--sage-800); font-weight: 500;
+        }
+        .chip strong { color: var(--sage-900); font-weight: 600; margin-right: 2px; }
+
+        /* MAIN GRID */
+        .result-grid {
+            display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; margin-bottom: 24px;
+        }
+
+        /* HERO RISK CARD */
+        .risk-hero {
+            position: relative; overflow: hidden;
+            background: linear-gradient(135deg, var(--sage-800) 0%, var(--sage-900) 100%);
+            color: white; border-radius: 28px; padding: 48px;
+        }
+        .risk-hero::before {
+            content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(168, 189, 161, 0.18), transparent 70%);
+            border-radius: 50%;
+        }
+        .risk-hero .label {
+            font-size: 11px; font-weight: 600; color: var(--sage-200);
+            text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 20px;
+            display: flex; align-items: center; gap: 10px; position: relative;
+        }
+        .risk-hero .label::after { content: ''; flex: 1; height: 1px; background: rgba(168, 189, 161, 0.3); }
+        .risk-hero .score-row { display: flex; align-items: baseline; gap: 16px; position: relative; }
+        .risk-hero .score {
+            font-family: var(--font-display); font-weight: 300; font-size: 120px;
+            line-height: 0.9; letter-spacing: -0.05em;
+        }
+        .risk-hero .score-max { font-size: 24px; color: var(--sage-300); font-weight: 400; }
+
+        .priority-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 18px; border-radius: 100px; margin-top: 28px;
+            font-size: 13px; font-weight: 600; position: relative;
+        }
+        .priority-badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+        .priority-normal { background: rgba(90, 138, 86, 0.2); color: #c5e0c3; }
+        .priority-normal .dot { background: #a8e0a5; }
+        .priority-low { background: rgba(200, 154, 59, 0.2); color: #f0d49a; }
+        .priority-low .dot { background: #f0d49a; }
+        .priority-medium { background: rgba(200, 92, 92, 0.25); color: #f0a8a8; }
+        .priority-medium .dot { background: #f0a8a8; }
+        .priority-high { background: rgba(165, 63, 63, 0.4); color: #ffc5c5; }
+        .priority-high .dot { background: #ffc5c5; }
+
+        .risk-hero .meter {
+            margin-top: 32px; height: 6px; background: rgba(255,255,255,0.1); border-radius: 100px;
+            overflow: hidden; position: relative;
+        }
+        .risk-hero .meter-fill {
+            height: 100%; background: linear-gradient(90deg, #a8e0a5, #f0d49a, #f0a8a8, #ffc5c5);
+            border-radius: 100px; transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .risk-hero .meter-scale {
+            display: flex; justify-content: space-between; margin-top: 10px;
+            font-size: 10px; color: var(--sage-300); font-weight: 500;
+        }
+
+        /* ZSCORE CARDS */
+        .zscore-column { display: flex; flex-direction: column; gap: 16px; }
+        .zscore-card {
+            background: white; border: 1px solid var(--sage-100); border-radius: 20px;
+            padding: 28px 28px; position: relative; overflow: hidden;
+        }
+        .zscore-card .period {
+            font-size: 11px; font-weight: 600; color: var(--sage-600);
+            text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;
+        }
+        .zscore-card .sub {
+            font-size: 12px; color: var(--sage-500); margin-bottom: 16px;
+        }
+        .zscore-card .row { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+        .zscore-card .z-value {
+            font-family: var(--font-display); font-size: 56px; font-weight: 400;
+            line-height: 1; letter-spacing: -0.03em; color: var(--sage-900);
+        }
+        .zscore-card .z-meta { text-align: right; }
+        .zscore-card .z-label {
+            display: inline-block; padding: 4px 12px; border-radius: 100px;
+            font-size: 11px; font-weight: 600;
+        }
+        .zscore-card .z-label.normal { background: var(--sage-100); color: var(--sage-700); }
+        .zscore-card .z-label.stunting { background: #fde8e8; color: var(--critical); }
+        .zscore-card .z-desc { font-size: 11px; color: var(--sage-500); margin-top: 6px; max-width: 160px; }
+
+        /* MONITORING */
+        .monitoring {
+            background: white; border: 1px solid var(--sage-100); border-radius: 20px;
+            padding: 32px; margin-bottom: 24px;
+        }
+        .monitoring-head {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--sage-100);
+        }
+        .monitoring-head h3 { font-family: var(--font-display); font-size: 22px; font-weight: 500; color: var(--sage-900); letter-spacing: -0.02em; }
+        .monitoring-head .badge { font-size: 11px; color: var(--sage-600); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+
+        .monitoring-track {
+            display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px;
+            padding: 8px 0;
+        }
+        .track-point {
+            text-align: center; padding: 20px; border-radius: 16px; background: var(--sage-50);
+        }
+        .track-point .label {
+            font-size: 11px; font-weight: 600; color: var(--sage-600);
+            text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;
+        }
+        .track-point .status {
+            font-family: var(--font-display); font-size: 20px; font-weight: 500; color: var(--sage-900);
+            margin-bottom: 4px;
+        }
+        .track-point .status.stunting { color: var(--critical); }
+        .track-point .status.normal { color: var(--success); }
+        .track-point .meta { font-size: 13px; color: var(--sage-600); }
+        .track-arrow {
+            color: var(--sage-400);
+        }
+
+        .monitoring-verdict {
+            margin-top: 20px; padding: 18px 20px; border-radius: 14px;
+            display: flex; gap: 14px; align-items: flex-start;
+        }
+        .verdict-good { background: linear-gradient(135deg, rgba(168, 189, 161, 0.15), rgba(168, 189, 161, 0.05)); border: 1px solid var(--sage-200); }
+        .verdict-bad { background: linear-gradient(135deg, rgba(200, 92, 92, 0.08), rgba(200, 92, 92, 0.03)); border: 1px solid #f5d5d5; }
+        .verdict-icon { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .verdict-icon.good { background: var(--sage-200); color: var(--sage-800); }
+        .verdict-icon.bad { background: #f5d5d5; color: var(--critical); }
+        .verdict-text .t { font-family: var(--font-display); font-size: 16px; font-weight: 500; color: var(--sage-900); margin-bottom: 2px; }
+        .verdict-text .d { font-size: 14px; color: var(--sage-700); line-height: 1.5; }
+
+        /* NOTICE */
+        .notice {
+            background: var(--sage-50); border-left: 3px solid var(--sage-500);
+            padding: 20px 24px; border-radius: 0 14px 14px 0;
+            display: flex; gap: 14px; align-items: flex-start; margin-bottom: 32px;
+        }
+        .notice-icon { flex-shrink: 0; color: var(--sage-700); }
+        .notice-content .t { font-size: 14px; font-weight: 600; color: var(--sage-900); margin-bottom: 4px; }
+        .notice-content .d { font-size: 14px; color: var(--sage-700); line-height: 1.6; }
+
+        /* ACTIONS */
+        .actions {
+            display: flex; gap: 12px; justify-content: center;
+            padding: 32px 0 20px; border-top: 1px solid var(--sage-100);
+        }
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 28px; border-radius: 100px; text-decoration: none;
+            font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+            transition: all 0.2s; border: none;
+        }
+        .btn-primary { background: var(--sage-800); color: white; box-shadow: 0 8px 20px rgba(56, 79, 55, 0.2); }
+        .btn-primary:hover { background: var(--sage-900); transform: translateY(-1px); box-shadow: 0 10px 28px rgba(56, 79, 55, 0.3); }
+        .btn-secondary { background: white; color: var(--sage-800); border: 1.5px solid var(--sage-200); }
+        .btn-secondary:hover { background: var(--sage-100); border-color: var(--sage-300); }
+        .btn svg { transition: transform 0.2s; }
+        .btn-primary:hover svg { transform: translateX(3px); }
+
+        @media (max-width: 1024px) {
+            nav { padding: 16px 32px; }
+            .container { padding: 36px 32px 60px; }
+        }
+        @media (max-width: 900px) {
+            nav { padding: 16px 24px; }
+            .container { padding: 32px 24px 60px; }
+            .result-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+            .result-header h1 { font-size: 34px; }
+            .result-grid { grid-template-columns: 1fr; }
+            .risk-hero { padding: 32px; }
+            .risk-hero .score { font-size: 80px; }
+            .monitoring-track { grid-template-columns: 1fr; gap: 12px; }
+            .track-arrow { transform: rotate(90deg); text-align: center; }
+            .actions { flex-direction: column; }
+            .actions .btn { width: 100%; justify-content: center; }
+        }
+        @media (max-width: 640px) {
+            nav { padding: 14px 20px; }
+            .logo { font-size: 18px; }
+            .logo-mark { width: 28px; height: 28px; font-size: 12px; }
+            .nav-btn { padding: 8px 12px; font-size: 12px; }
+            .container { padding: 24px 20px 60px; }
+            .result-header h1 { font-size: 26px; }
+            .result-header p { font-size: 13px; }
+            .input-summary { gap: 6px; }
+            .chip { padding: 4px 10px; font-size: 11px; }
+            .risk-hero { padding: 24px; border-radius: 20px; }
+            .risk-hero .score { font-size: 64px; }
+            .risk-hero .score-max { font-size: 18px; }
+            .risk-hero .meter-scale { font-size: 9px; }
+            .priority-badge { font-size: 12px; padding: 8px 14px; }
+            .zscore-card { padding: 22px; }
+            .zscore-card .z-value { font-size: 42px; }
+            .monitoring { padding: 22px; }
+            .monitoring-head h3 { font-size: 18px; }
+            .monitoring-head .badge { display: none; }
+            .track-point { padding: 16px; }
+            .track-point .status { font-size: 17px; }
+            .monitoring-verdict { flex-direction: column; padding: 16px; }
+            .verdict-text .t { font-size: 15px; }
+            .verdict-text .d { font-size: 12px; }
+            .notice { padding: 16px; gap: 10px; }
+            .notice-content .d { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">
+            <div class="logo-mark">S</div>
+            <span>Stuntor</span>
+        </a>
+        <div class="nav-actions">
+            <a href="/" class="nav-btn ghost">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Halaman Awal
+            </a>
+            <a href="/history" class="nav-btn ghost">Riwayat</a>
+            <a href="/form" class="nav-btn solid">Hitung Ulang</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="result-header">
+            <div class="result-header-left">
+                <span class="eyebrow">Hasil Penilaian</span>
+                <h1>Penilaian risiko <em>berhasil dihitung.</em></h1>
+                <p>Berikut hasil analisis antropometri balita{% if nama %} <strong>{{ nama }}</strong>{% endif %} berdasarkan standar WHO dan fuzzy Sugeno.</p>
+                <div class="input-summary">
+                    {% if nama %}<span class="chip"><strong>Nama:</strong> {{ nama }}</span>{% endif %}
+                    <span class="chip"><strong>JK:</strong> {{ jk_label }}</span>
+                    <span class="chip"><strong>Usia:</strong> {{ usia }} bulan</span>
+                    <span class="chip"><strong>TB:</strong> {{ tb }} cm</span>
+                    <span class="chip"><strong>BB:</strong> {{ bb }} g</span>
+                    <span class="chip"><strong>TB Lahir:</strong> {{ pbl }} cm</span>
+                    <span class="chip"><strong>MP-ASI:</strong> {{ mpasi }} bulan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-grid">
+            <!-- HERO RISK CARD -->
+            {% set flag = result.priority_flag %}
+            {% set flag_class = 'normal' if flag == 'Normal' else ('low' if flag == 'STUNTING LOW' else ('medium' if flag == 'STUNTING MEDIUM' else 'high')) %}
+            <div class="risk-hero">
+                <div class="label">Risk Score · Fuzzy Sugeno</div>
+                <div class="score-row">
+                    <div class="score">{{ result.risk_score }}</div>
+                    <div class="score-max">/ 100</div>
+                </div>
+                <div class="priority-badge priority-{{ flag_class }}">
+                    <span class="dot"></span>
+                    Priority Flag: {{ flag }}
+                </div>
+                <div class="meter">
+                    <div class="meter-fill" data-width="{{ result.risk_score }}"></div>
+                </div>
+                <div class="meter-scale">
+                    <span>0 Normal</span>
+                    <span>30 Low</span>
+                    <span>60 Medium</span>
+                    <span>90 High</span>
+                    <span>100</span>
+                </div>
+            </div>
+
+            <!-- Z-SCORE COLUMN -->
+            <div class="zscore-column">
+                <div class="zscore-card">
+                    <div class="period">Saat Lahir</div>
+                    <div class="sub">Berdasarkan Panjang Badan Lahir</div>
+                    <div class="row">
+                        <div class="z-value">{{ '%+.2f' % result.z_score_lahir if result.z_score_lahir is not none else '—' }}</div>
+                        <div class="z-meta">
+                            {% if result.label_lahir %}
+                            <span class="z-label {{ 'stunting' if result.label_lahir == 'Stunting' else 'normal' }}">{{ result.label_lahir }}</span>
+                            <div class="z-desc">Standar WHO LMS untuk usia 0 bulan</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="zscore-card">
+                    <div class="period">Saat Pengukuran</div>
+                    <div class="sub">Berdasarkan TB aktual · usia {{ usia }} bulan</div>
+                    <div class="row">
+                        <div class="z-value">{{ '%+.2f' % result.z_score_ukur if result.z_score_ukur is not none else '—' }}</div>
+                        <div class="z-meta">
+                            {% if result.label_ukur %}
+                            <span class="z-label {{ 'stunting' if result.label_ukur == 'Stunting' else 'normal' }}">{{ result.label_ukur }}</span>
+                            <div class="z-desc">Standar WHO LMS sesuai usia aktual</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MONITORING -->
+        <div class="monitoring">
+            <div class="monitoring-head">
+                <h3>Monitoring Perkembangan</h3>
+                <div class="badge">Perbandingan Temporal</div>
+            </div>
+            <div class="monitoring-track">
+                <div class="track-point">
+                    <div class="label">Kondisi Saat Lahir</div>
+                    <div class="status {{ 'stunting' if result.label_lahir == 'Stunting' else 'normal' }}">{{ result.label_lahir or '—' }}</div>
+                    <div class="meta">Z-Score {{ '%+.2f' % result.z_score_lahir if result.z_score_lahir is not none else '—' }}</div>
+                </div>
+                <div class="track-arrow">
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none">
+                        <path d="M2 12h44m-8-8l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="track-point">
+                    <div class="label">Kondisi Saat Ini</div>
+                    <div class="status {{ 'stunting' if result.fuzzy_label == 'Stunting' else 'normal' }}">{{ result.fuzzy_label }}</div>
+                    <div class="meta">Risk Score {{ result.risk_score }}</div>
+                </div>
+            </div>
+
+            {% set mon = result.monitoring %}
+            {% set is_good = 'BAIK' in mon or 'Konsisten Baik' in mon %}
+            <div class="monitoring-verdict {{ 'verdict-good' if is_good else 'verdict-bad' }}">
+                <div class="verdict-icon {{ 'good' if is_good else 'bad' }}">
+                    {% if is_good %}
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 7L9 18l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    {% else %}
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M10.3 3.86l-8.78 15a2 2 0 001.73 3h17.5a2 2 0 001.73-3l-8.78-15a2 2 0 00-3.46 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    {% endif %}
+                </div>
+                <div class="verdict-text">
+                    <div class="t">{{ mon.split(' - ')[0] if ' - ' in mon else mon }}</div>
+                    <div class="d">{{ mon.split(' - ')[1] if ' - ' in mon else 'Silakan tinjau data di atas untuk detail perkembangan.' }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notice">
+            <div class="notice-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="notice-content">
+                <div class="t">Disclaimer</div>
+                <div class="d">Hasil perhitungan ini merupakan penilaian berdasarkan data yang dimasukkan dan tidak dapat menjadi patokan dalam pengambilan keputusan medis. Untuk diagnosa dan penanganan lebih lanjut, disarankan berkonsultasi dengan tenaga kesehatan profesional.</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="/form" class="btn btn-primary">
+                Hitung Kembali
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Kembali ke Halaman Awal
+            </a>
+        </div>
+    </div>
+    <script>
+        // Terapkan lebar meter dari nilai risk_score (data-width).
+        // Dipisah dari inline-style agar tidak memicu peringatan linter CSS.
+        document.querySelectorAll('.meter-fill[data-width]').forEach(function (el) {
+            el.style.width = el.getAttribute('data-width') + '%';
+        });
+    </script>
+</body>
+</html>
