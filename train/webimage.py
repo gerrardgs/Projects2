@@ -3,7 +3,7 @@ import os
 import sys
 import io
 
-# === KONFIGURASI — EDIT 2 BARIS INI SESUAI STRUKTUR PROJECT ANDA ===
+# === KONFIGURASI - EDIT 2 BARIS INI SESUAI STRUKTUR PROJECT ANDA ===
 # Jika svg/ ada di /Users/sinitygs/Projects2/svg, set:
 SVG_DIR = '/Users/sinitygs/Projects2/mainprogram/svg'
 # Output ke folder paper_assets di root project:

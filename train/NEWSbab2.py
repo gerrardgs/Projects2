@@ -1189,7 +1189,7 @@ def build_daftar_pustaka(doc):
          (", 80, 8091-8126. https://doi.org/10.1007/s11042-020-10139-6", False, False)],
 
         [("Kementerian Kesehatan Republik Indonesia. (2023). ", False, False),
-         ("Laporan Survei Kesehatan Indonesia (SKI) 2023 – Tema Stunting", False, True),
+         ("Laporan Survei Kesehatan Indonesia (SKI) 2023 - Tema Stunting", False, True),
          (". Jakarta: Kementerian Kesehatan RI.", False, False)],
 
         [("Kementerian Kesehatan Republik Indonesia. (2024). ", False, False),
@@ -1264,7 +1264,7 @@ def build_daftar_pustaka(doc):
 
         # U
         [("UNICEF, World Health Organization, & World Bank Group. (2023). ", False, False),
-         ("Levels and trends in child malnutrition: UNICEF/WHO/World Bank Group joint child malnutrition estimates – Key findings of the 2023 edition", False, True),
+         ("Levels and trends in child malnutrition: UNICEF/WHO/World Bank Group joint child malnutrition estimates - Key findings of the 2023 edition", False, True),
          (". New York: UNICEF.", False, False)],
 
         # W

@@ -156,7 +156,7 @@
     <text x="509" y="302" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">dalam inferensi Sugeno</text>
 
     <line x1="914" y1="210" x2="914" y2="290" stroke="#ffffff" stroke-opacity="0.2"/>
-    <text x="938" y="256" font-family="Fraunces, Georgia, serif" font-size="64" font-weight="400" fill="#ffffff">0–59</text>
+    <text x="938" y="256" font-family="Fraunces, Georgia, serif" font-size="64" font-weight="400" fill="#ffffff">0-59</text>
     <text x="938" y="284" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">Rentang usia balita yang dapat</text>
     <text x="938" y="302" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#ccd9c7">dipantau, dalam satuan bulan</text>
   </g>
@@ -166,7 +166,7 @@
     <line x1="80" y1="0" x2="104" y2="0" stroke="#7d9a77"/>
     <text x="116" y="5" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#476244">PERTANYAAN UMUM</text>
 
-    <text x="80" y="60" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">FAQ — <tspan font-style="italic" font-weight="300" fill="#476244">hal-hal yang perlu</tspan></text>
+    <text x="80" y="60" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">FAQ - <tspan font-style="italic" font-weight="300" fill="#476244">hal-hal yang perlu</tspan></text>
     <text x="80" y="118" font-family="Fraunces, Georgia, serif" font-size="48" font-weight="400" fill="#1f2b1f">Anda ketahui.</text>
 
     <!-- Left description -->

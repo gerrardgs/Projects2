@@ -66,7 +66,7 @@ sns.heatmap(
 
 ax.set_xlabel('Predicted', labelpad=8)
 ax.set_ylabel('Actual (WHO HAZ)', labelpad=8)
-ax.set_title(f'Confusion Matrix — GA-Optimized Model on Test Set (n={n_total})',
+ax.set_title(f'Confusion Matrix - GA-Optimized Model on Test Set (n={n_total})',
              pad=10)
 
 # Pastikan label sumbu tidak terpotong & rapi

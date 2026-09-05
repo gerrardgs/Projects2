@@ -38,7 +38,7 @@
     <circle cx="14" cy="316" r="14" fill="#e6ece4"/>
     <text x="14" y="320" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="600" fill="#384f37" text-anchor="middle">1</text>
     <text x="44" y="313" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#1f2b1f">Data Identitas</text>
-    <text x="44" y="331" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Usia (0–59 bulan) dan jenis kelamin balita</text>
+    <text x="44" y="331" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#476244">Usia (0-59 bulan) dan jenis kelamin balita</text>
     <line x1="0" y1="354" x2="380" y2="354" stroke="#e6ece4"/>
 
     <circle cx="14" cy="384" r="14" fill="#e6ece4"/>

@@ -341,7 +341,7 @@ children.push(makeTable(
         ["2", "STUNTING MEDIUM", "65", "30", "60"],
         ["3", "STUNTING LOW", "35", "20", "40"],
         ["4", "Normal", "10", "48", "96"],
-        [{ text: "Total", bold: true, align: AlignmentType.LEFT }, "—", "—", { text: "108", bold: true }, { text: "216", bold: true }],
+        [{ text: "Total", bold: true, align: AlignmentType.LEFT }, " - ", " - ", { text: "108", bold: true }, { text: "216", bold: true }],
     ],
     [800, 2600, 1800, 2000, 2160]
 ));
@@ -370,7 +370,7 @@ children.push(makeTable(
         ["4", "BB Laki-laki", "Kurang (4) + Normal (4) + Lebih (3) + Obesitas (4)", "15"],
         ["5", "BB Perempuan", "Kurang (4) + Normal (4) + Lebih (3) + Obesitas (4)", "15"],
         ["6", "MP-ASI", "Terlalu Cepat (4) + Normal (4) + Lambat (4)", "12"],
-        [{ text: "Total", bold: true, align: AlignmentType.LEFT }, "—", "—", { text: "77", bold: true }],
+        [{ text: "Total", bold: true, align: AlignmentType.LEFT }, " - ", " - ", { text: "77", bold: true }],
     ],
     [800, 3000, 4300, 1060]
 ));
@@ -380,12 +380,12 @@ children.push(captionTab("Tabel III.8 Contoh Rentang Batas Gen untuk Beberapa Pa
 children.push(makeTable(
     ["No.", "Variabel & Label", "Parameter", "Rentang Batas (lo, hi)"],
     [
-        ["1", "Usia – Muda", "a, b, c, d", "(0,0); (0,0); (3,12); (12,24)"],
-        ["2", "Usia – Sedang", "a, b, c", "(6,18); (20,36); (36,54)"],
-        ["3", "TB Laki-laki – Pendek", "a, b, c, d", "(35,42); (35,42); (45,60); (60,80)"],
-        ["4", "TB Perempuan – Normal", "a, b, c, d", "(48,65); (58,75); (88,103); (98,113)"],
-        ["5", "BB Laki-laki – Kurang", "a, b, c, d", "(1000,2000); (1000,2000); (3000,6000); (6000,10000)"],
-        ["6", "MP-ASI – Normal", "a, b, c, d", "(3,5); (4,6); (5.5,7.5); (6,9)"],
+        ["1", "Usia - Muda", "a, b, c, d", "(0,0); (0,0); (3,12); (12,24)"],
+        ["2", "Usia - Sedang", "a, b, c", "(6,18); (20,36); (36,54)"],
+        ["3", "TB Laki-laki - Pendek", "a, b, c, d", "(35,42); (35,42); (45,60); (60,80)"],
+        ["4", "TB Perempuan - Normal", "a, b, c, d", "(48,65); (58,75); (88,103); (98,113)"],
+        ["5", "BB Laki-laki - Kurang", "a, b, c, d", "(1000,2000); (1000,2000); (3000,6000); (6000,10000)"],
+        ["6", "MP-ASI - Normal", "a, b, c, d", "(3,5); (4,6); (5.5,7.5); (6,9)"],
     ],
     [800, 2900, 1900, 3560]
 ));

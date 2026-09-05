@@ -57,7 +57,7 @@ plt.rcParams.update({
 
 fig, ax = plt.subplots(figsize=(7.2, 5.0))
 
-# Warna per kelas (Normal=biru, Stunting=merah) — konsisten dengan figure 4
+# Warna per kelas (Normal=biru, Stunting=merah) - konsisten dengan figure 4
 mask_stunting = df['label_who_ukur'] == 'Stunting'
 mask_normal   = ~mask_stunting
 

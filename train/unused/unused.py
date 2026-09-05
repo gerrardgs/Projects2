@@ -5,12 +5,12 @@
 # PENELITIAN: Klasifikasi Stunting pada Balita di Kalimantan Tengah
 #             Menggunakan Logika Fuzzy (Studi Kasus Data SKI 2023)
 # =============================================================================
-# TASK 1: INPUT DATA — Loading Dataset & Seleksi Fitur
-# TASK 2: PREPROCESSING — Pembersihan, Penyaringan, Transformasi
-# TASK 3: STUNTING LABELLING & Z-SCORE — Ground Truth WHO
-# TASK 4: FUZZY SYSTEM LOGIC — Takagi-Sugeno (Fuzzyfikasi, Rules, Defuzzyfikasi)
-# TASK 5: EVALUASI — Confusion Matrix (Precision, Recall, F1-Score, Accuracy)
-# TASK 6: SKEMA PENGUJIAN — Train/Test 80/20 Stratified + Optimasi Parameter
+# TASK 1: INPUT DATA - Loading Dataset & Seleksi Fitur
+# TASK 2: PREPROCESSING - Pembersihan, Penyaringan, Transformasi
+# TASK 3: STUNTING LABELLING & Z-SCORE - Ground Truth WHO
+# TASK 4: FUZZY SYSTEM LOGIC - Takagi-Sugeno (Fuzzyfikasi, Rules, Defuzzyfikasi)
+# TASK 5: EVALUASI - Confusion Matrix (Precision, Recall, F1-Score, Accuracy)
+# TASK 6: SKEMA PENGUJIAN - Train/Test 80/20 Stratified + Optimasi Parameter
 # =============================================================================
 # Lokasi: train/fuzzytrain.py
 # Struktur:
@@ -108,7 +108,7 @@
 # # TASK 1: INPUT DATA
 # # ============================================================================
 # def task1_input_data():
-#     print_header("TASK 1: INPUT DATA — Loading Dataset & Seleksi Fitur")
+#     print_header("TASK 1: INPUT DATA - Loading Dataset & Seleksi Fitur")
     
 #     print_step("1.1", "Memuat dataset SKI 2023 Kalimantan Tengah")
 #     print(f"    Path: {DATASET_PATH}")
@@ -408,10 +408,10 @@
 #     print(f"    Jenis kelamin: {sorted([int(x) for x in jk_range])}")
     
 #     # 3.3: ANALISA PER BARIS
-#     print_step("3.3", "ANALISA PER BARIS — Menghitung Z-Score WHO untuk setiap balita")
+#     print_step("3.3", "ANALISA PER BARIS - Menghitung Z-Score WHO untuk setiap balita")
 #     print(f"    Rumus WHO (Persamaan II.2): Z = [(x/M)^L - 1] / (L x S)")
 #     print(f"    Dimana:")
-#     print(f"      x = panjang/tinggi badan balita (cm) — data pengukuran")
+#     print(f"      x = panjang/tinggi badan balita (cm) - data pengukuran")
 #     print(f"      L (Lambda) = parameter power transformasi normalitas")
 #     print(f"      M (Miu)    = median populasi referensi WHO")
 #     print(f"      S (Sigma)  = koefisien variasi populasi referensi")
@@ -584,9 +584,9 @@
     
 #     if all_valid:
 #         print(f"    [OK] Semua {len(check_indices)} validasi manual PASS")
-#         print(f"    [OK] Konfirmasi: Dataset dianalisa PER BARIS — formula Z-Score benar")
+#         print(f"    [OK] Konfirmasi: Dataset dianalisa PER BARIS - formula Z-Score benar")
 #     else:
-#         print(f"    [!] Ada perbedaan — perlu review")
+#         print(f"    [!] Ada perbedaan - perlu review")
     
 #     # --------------------------------------------------------------
 #     # 3.7: Simpan Output Analisa Per Baris ke CSV
@@ -1298,12 +1298,12 @@
 #     print_header("RINGKASAN PIPELINE TASK 1 - 6")
 
 #     tm = trained_model['metrics']
-#     print(f"    TASK 1: Input Data    - {raw_shape[0]:,} x {raw_shape[1]} -> 6 variabel")
+#     print(f"    TASK 1: Input Data - {raw_shape[0]:,} x {raw_shape[1]} -> 6 variabel")
 #     print(f"    TASK 2: Preprocessing - {len(df_clean):,} balita bersih")
-#     print(f"    TASK 3: Z-Score WHO   - Normal={label_dist.get('Normal',0)}, Stunting={label_dist.get('Stunting',0)}")
-#     print(f"    TASK 4: Fuzzy Sugeno  - {len(FUZZY_RULES)} rules, c=[10,35,65,90], FK output segitiga")
-#     print(f"    TASK 5: Evaluasi      - Confusion Matrix (P/R/F1/Acc)")
-#     print(f"    TASK 6: Train/Test    - 80/20 Stratified + MF Optimization")
+#     print(f"    TASK 3: Z-Score WHO - Normal={label_dist.get('Normal',0)}, Stunting={label_dist.get('Stunting',0)}")
+#     print(f"    TASK 4: Fuzzy Sugeno - {len(FUZZY_RULES)} rules, c=[10,35,65,90], FK output segitiga")
+#     print(f"    TASK 5: Evaluasi - Confusion Matrix (P/R/F1/Acc)")
+#     print(f"    TASK 6: Train/Test - 80/20 Stratified + MF Optimization")
 #     print(f"")
 #     print(f"    Hasil Evaluasi (Test 20%):")
 #     print(f"    Precision={tm['test']['precision']:.4f}, Recall={tm['test']['recall']:.4f}, F1={tm['test']['f1']:.4f}, Accuracy={tm['test']['accuracy']:.4f}")

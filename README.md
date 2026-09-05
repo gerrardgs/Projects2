@@ -1,99 +1,74 @@
-# STUNTOR: Genetic Algorithm-Optimized Fuzzy Inference System (GA-FIS) for Stunting Risk Assessment (Projects 2)
+# STUNTOR: Genetic Algorithm-Tuned Fuzzy Inference System for Stunting Assessment (Projects 2)
 
-[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/Flask-Web%20Platform-red.svg)](https://flask.palletsprojects.com/)
-[![Optimization](https://img.shields.io/badge/Algorithm-Genetic%20Algorithm%20(GA)-purple.svg)](https://en.wikipedia.org/wiki/Genetic_algorithm)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Web%20App-red.svg)](https://flask.palletsprojects.com/)
+[![Algorithm](https://img.shields.io/badge/Algorithm-GA--FIS-purple.svg)](https://en.wikipedia.org/wiki/Genetic_algorithm)
 [![Standards](https://img.shields.io/badge/Standards-WHO%20Child%20Growth-emerald.svg)](https://www.who.int/tools/child-growth-standards)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An intelligent clinical decision-support platform that integrates **WHO Anthro Z-Score standards** with a **Genetic Algorithm-Optimized Fuzzy Inference System (GA-FIS)**. Designed to assess, prioritize, and monitor toddler stunting risk through continuous membership grading and automated triage flag stratification.
+A clinical decision-support web application combining WHO Anthro Z-Score standards with a Genetic Algorithm-tuned Fuzzy Inference System (GA-FIS). The system estimates child stunting risk and prioritizes toddlers for medical checkups and nutrition programs.
 
 ---
 
-## Table of Contents
-1. [Executive Summary](#executive-summary)
-2. [Key Features](#key-features)
-3. [System Architecture](#system-architecture)
-4. [Methodological Framework](#methodological-framework)
-5. [Genetic Algorithm Parameter Tuning](#genetic-algorithm-parameter-tuning)
-6. [Directory Structure](#directory-structure)
-7. [Installation & Setup](#installation--setup)
-8. [Execution Guide](#execution-guide)
-9. [Clinical Output & Evaluation](#clinical-output--evaluation)
-10. [Author & Attribution](#author--attribution)
+## Overview
 
----
-
-## Executive Summary
-
-Conventional stunting diagnoses rely strictly on crisp cut-off points (e.g., $HAZ < -2.0$ SD), often failing to capture boundary uncertainties where a child at $-1.95$ SD is clinically at severe nutritional vulnerability despite falling within the normal threshold. **STUNTOR** overcomes this limitation by implementing a Mamdani-style Fuzzy Inference System whose membership function parameters are optimized via a Genetic Algorithm (GA) against empirical clinical distributions.
+Clinical stunting diagnosis usually depends on strict cut-offs (e.g. HAZ < -2.0 SD). In practice, toddlers with Z-scores near the threshold (such as -1.95 SD) also face high nutritional risks that strict rules can miss. **STUNTOR** addresses this problem using a Mamdani Fuzzy Inference System whose membership functions are optimized via Genetic Algorithms.
 
 The platform provides:
-1. **Accurate Anthropometric Z-Score Computing**: Real-time evaluation of Height-for-Age (HAZ), Weight-for-Age (WAZ), and Weight-for-Height (WHZ) according to WHO Child Growth Standards.
-2. **GA-Tuned Fuzzy Engine**: Dynamic linguistic variables (Low, Moderate, High, Severe Risk) optimized to minimize misclassification loss.
-3. **Full-Featured Clinical Web Platform**: Flask-based interface with longitudinal growth trajectory charts, historical evaluation logs, and automated triage priority flags (P1 Critical, P2 Urgent, P3 Routine).
+1. **WHO Growth Standards Calculation**: Computes Height-for-Age (HAZ), Weight-for-Age (WAZ), and Weight-for-Height (WHZ) according to WHO guidelines.
+2. **GA-Tuned Fuzzy Engine**: Finds optimal fuzzy membership boundaries to improve classification accuracy across borderline cases.
+3. **Web Interface (Flask)**: Displays individual growth trajectories, assessment logs, and triage flags (P1 Critical, P2 High, P3 Moderate, P4 Normal).
 
 ---
 
-## Key Features
+## Features
 
-- **WHO Anthro Engine**: Deterministic calculation of Z-scores utilizing age-in-months and gender-specific LMS growth curves.
-- **GA-Optimized Membership Functions**: Replaces arbitrary expert guessing with genetic evolutionary search to find optimal triangular/trapezoidal fuzzy bounds.
-- **Priority Flag Distribution**: Automatically categorizes toddlers into clinical urgency tiers to assist Posyandu and Puskesmas workers in allocating nutritional intervention packages.
-- **Interactive Growth Trajectories**: Visualizes child measurements directly on standard WHO percentile curves.
-- **Comprehensive Academic Documentation**: Includes publication drafts and research manuscripts across theoretical foundation, methodology, and experimental results.
+- **WHO Anthro Engine**: Calculates standard deviation scores using LMS curve parameters by age and sex.
+- **Genetic Algorithm Optimization**: Tunes triangular and trapezoidal membership points automatically based on validation data.
+- **Triage Priority Stratification**: Categorizes cases into four action levels to assist community health centers in allocating food assistance.
+- **Growth Chart Visualizations**: Plots measurements directly on WHO growth curves.
+- **Documented Research Papers**: Includes research drafts and experimental notes detailing the methodology.
 
 ---
 
-## System Architecture
+## System Workflow
 
 ```mermaid
 flowchart TD
-    A[Child Measurement Input<br/>Age, Sex, Height, Weight, Socioeconomic] --> B[WHO Anthro Z-Score Engine]
+    A[Toddler Measurements: Age, Sex, Height, Weight] --> B[WHO Anthro Z-Score Engine]
     B --> C[Compute HAZ, WAZ, WHZ]
-    C --> D[Fuzzification Layer<br/>Optimized Triangular & Trapezoidal MFs]
-    D --> E[Fuzzy Rule Base Evaluation<br/>Mamdani Min-Max Inference]
-    E --> F[Defuzzification Layer<br/>Centroid Method]
-    F --> G[Continuous Stunting Risk Score: 0.0 - 100.0]
-    G --> H[Priority Flag Stratification<br/>P1 Critical / P2 High / P3 Moderate / P4 Low]
-    H --> I[Web Dashboard & Clinical Growth Trajectory]
+    C --> D[Fuzzification with GA-Tuned Membership Functions]
+    D --> E[Mamdani Fuzzy Rule Evaluation]
+    E --> F[Centroid Defuzzification]
+    F --> G[Stunting Risk Score: 0 - 100]
+    G --> H[Assign Priority Flag: P1, P2, P3, P4]
+    H --> I[Flask Web Dashboard & Charts]
 ```
 
----
-
-## Methodological Framework
-
-### 1. WHO Anthro Z-Score Computation
-Standard Deviation (Z-score) is calculated as:
+### Z-Score Formula
+Standard deviation scores are calculated using WHO parameters:
 
 $$Z = \frac{\left(\frac{y}{M}\right)^L - 1}{L \cdot S} \quad (L \neq 0)$$
 
-Where $y$ is the observed measurement, $M$ is the median, $S$ is the coefficient of variation, and $L$ is the Box-Cox transformation power parameter from WHO tables.
-
-### 2. GA Optimization of Fuzzy Sets
-The Genetic Algorithm optimizes the chromosome vector $\theta = \{a_1, b_1, c_1, \dots, a_k, b_k, c_k\}$ representing the vertices of the fuzzy sets. The fitness function minimizes the mean squared error and false-negative penalties:
-
-$$\text{Fitness}(\theta) = \frac{1}{1 + \frac{1}{N} \sum_{i=1}^N \left( y_i - \hat{y}_i(\theta) \right)^2 + \lambda \cdot \text{FN}_{\text{penalty}}}$$
+Where $y$ is the child's measurement, $M$ is the median, $S$ is the coefficient of variation, and $L$ is the Box-Cox power transformation.
 
 ---
 
-## Directory Structure
+## Project Structure
 
 ```
 Projects2/
 ├── .venv/                      # Python virtual environment
 ├── mainprogram/
-│   ├── fuzzytrain_v2_defaults.py # Default parameters and model configurations
-│   ├── history/                # Saved clinical diagnostic histories
-│   └── svg/                    # Dynamic vector graphics for growth curves
-├── node_modules/               # Supporting frontend assets
-├── package.json                # Web asset configuration
-└── train/
-    ├── confusionmatrix.py      # Classification matrix validation
-    ├── fuzzytrainv2.py         # Genetic algorithm fuzzy optimizer script
-    ├── growthtrajectory.py     # WHO growth trajectory visualizer
-    ├── labeldistribution.py    # Class balance and distribution scripts
-    └── priorityflagdistribution.py # Triage priority distribution analyzer
+│   ├── fuzzytrain_v2_defaults.py # Default parameters and application runner
+│   ├── history/                # Saved assessment records
+│   └── svg/                    # Growth curve chart templates
+├── train/
+    ├── confusionmatrix.py      # Classification matrix evaluation
+    ├── fuzzytrainv2.py         # Genetic algorithm fuzzy optimizer
+    ├── growthtrajectory.py     # Growth trajectory plotter
+    ├── labeldistribution.py    # Class balance checker
+    └── priorityflagdistribution.py # Priority distribution analysis
 ```
 
 ---
@@ -101,36 +76,32 @@ Projects2/
 ## Installation & Setup
 
 ```bash
-# Clone the repository
 git clone https://github.com/gerrardgs/Projects2.git
 cd Projects2
 
-# Set up virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Install dependencies
 pip install flask numpy pandas scipy matplotlib seaborn scikit-fuzzy
 ```
 
 ---
 
-## Execution Guide
+## Running the Code
 
-### 1. Running the GA Fuzzy Training & Optimization
+### 1. Optimize Membership Functions with GA
 ```bash
 cd train
 python3 fuzzytrainv2.py
 ```
-This evolves fuzzy membership thresholds across successive generations and saves optimal parameter bounds.
 
-### 2. Validating Triage Priority Distributions
+### 2. Check Results and Confusion Matrix
 ```bash
 python3 priorityflagdistribution.py
 python3 confusionmatrix.py
 ```
 
-### 3. Launching the Web Platform
+### 3. Launch Web App
 ```bash
 cd ../mainprogram
 python3 fuzzytrain_v2_defaults.py
@@ -138,19 +109,17 @@ python3 fuzzytrain_v2_defaults.py
 
 ---
 
-## Clinical Output & Evaluation
+## Risk Score & Action Tiers
 
-- **Defuzzified Risk Score**: Scaled continuous value from $0.0$ (Zero Risk) to $100.0$ (Severe Chronic Malnutrition).
-- **Triage Priority Stratification**:
- - **P1 (Critical, Risk > 75.0)**: Immediate pediatric referral, therapeutic feeding program, micronutrient supplementation.
- - **P2 (High, 50.0 - 75.0)**: Bi-weekly Posyandu monitoring, intensive dietary counseling, sanitation review.
- - **P3 (Moderate, 25.0 - 50.0)**: Monthly growth tracking, balanced nutritional food education.
- - **P4 (Low / Normal, < 25.0)**: Standard preventative health routine.
+- **P1 (Score > 75.0)**: Critical - Immediate pediatric referral and therapeutic food package.
+- **P2 (Score 50.0 - 75.0)**: High Risk - Bi-weekly Posyandu checks and dietary counseling.
+- **P3 (Score 25.0 - 50.0)**: Moderate Risk - Monthly growth tracking and balanced nutrition guidance.
+- **P4 (Score < 25.0)**: Normal - Standard health routine.
 
 ---
 
-## Author & Attribution
+## Author
 
-- **Developer & Researcher**: Gerrard Sebastian (`sinitygsxy`)
-- **Email**: `gerrardsebastiangege2005@gmail.com`
-- **GitHub**: [github.com/gerrardgs](https://github.com/gerrardgs)
+- Gerrard Sebastian (`sinitygsxy`)
+- Email: gerrardsebastiangege2005@gmail.com
+- GitHub: [github.com/gerrardgs](https://github.com/gerrardgs)

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwayat Perhitungan — Stuntor</title>
+    <title>Riwayat Perhitungan - Stuntor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -250,8 +250,8 @@
                     <tbody>
                         {% for r in records|reverse %}
                         <tr>
-                            <td>{{ r.timestamp[:16].replace('T', ' ') if r.timestamp else '—' }}</td>
-                            <td>{{ r.nama if r.nama and r.nama|string != 'nan' else '—' }}</td>
+                            <td>{{ r.timestamp[:16].replace('T', ' ') if r.timestamp else ' - ' }}</td>
+                            <td>{{ r.nama if r.nama and r.nama|string != 'nan' else ' - ' }}</td>
                             <td>{{ 'L' if r.jenis_kelamin|string == '1' else 'P' }}</td>
                             <td>{{ r.usia_bulan }} bln</td>
                             <td>{{ r.tinggi_badan_cm }} cm</td>

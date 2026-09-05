@@ -6,7 +6,7 @@ from scipy.stats import spearmanr
 df = pd.read_csv('train/trainfile/dataset_final.csv')
 
 print("=" * 70)
-print("DATA UNTUK PAPER — JALANKAN INI DAN KIRIM OUTPUT KE CLAUDE")
+print("DATA UNTUK PAPER - JALANKAN INI DAN KIRIM OUTPUT KE CLAUDE")
 print("=" * 70)
 
 # Demografi

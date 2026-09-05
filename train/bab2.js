@@ -291,7 +291,7 @@ function buildBabII() {
       ],
       [
         "5",
-        { runs: [R("A hybrid Genetic–Grey Wolf Optimization algorithm for optimizing Takagi–Sugeno–Kang fuzzy systems", { italics: true })] },
+        { runs: [R("A hybrid Genetic-Grey Wolf Optimization algorithm for optimizing Takagi-Sugeno-Kang fuzzy systems", { italics: true })] },
         "Elghamrawy & Hassanien, 2022",
         "Penelitian Elghamrawy dan Hassanien (2022) mengintegrasikan Genetic Algorithm dengan optimasi Grey Wolf untuk mengoptimasi sistem Takagi-Sugeno-Kang yang memiliki kesamaan dengan penelitian ini karena sama-sama menggunakan GA untuk menyempurnakan sistem fuzzy Sugeno.",
         "Hybrid GA-GWO terbukti meningkatkan performa Takagi-Sugeno-Kang pada beberapa benchmark dataset dengan tetap mempertahankan struktur aturan fuzzy.",

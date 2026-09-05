@@ -41,7 +41,7 @@ def get_default_mf():
             'Normal':     ('trap', [4.0, 5.5, 6.5, 8.0]),
             'Lambat':     ('trap', [7.0, 8.0, 12.0, 12.0]),
         },
-        # TB: laki / perempuan (cm) — conservative human-scale values
+        # TB: laki / perempuan (cm) - conservative human-scale values
         'tb_l': {
             'Pendek': ('trap', [38.0, 38.0, 55.0, 70.0]),
             'Normal': ('trap', [60.0, 70.0, 100.0, 110.0]),
@@ -52,7 +52,7 @@ def get_default_mf():
             'Normal': ('trap', [58, 68, 98, 108]),
             'Tinggi': ('trap', [98, 108, 130, 130]),
         },
-        # Berat badan (gram) — per JK; values are illustrative
+        # Berat badan (gram) - per JK; values are illustrative
         'bb_l': {
             'Kurang':   ('trap', [1500, 1500, 5000, 8000]),
             'Normal':   ('trap', [6000, 8000, 15000, 18000]),
