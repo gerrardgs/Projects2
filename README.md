@@ -142,10 +142,10 @@ python3 fuzzytrain_v2_defaults.py
 
 - **Defuzzified Risk Score**: Scaled continuous value from $0.0$ (Zero Risk) to $100.0$ (Severe Chronic Malnutrition).
 - **Triage Priority Stratification**:
-  - **P1 (Critical, Risk > 75.0)**: Immediate pediatric referral, therapeutic feeding program, micronutrient supplementation.
-  - **P2 (High, 50.0 - 75.0)**: Bi-weekly Posyandu monitoring, intensive dietary counseling, sanitation review.
-  - **P3 (Moderate, 25.0 - 50.0)**: Monthly growth tracking, balanced nutritional food education.
-  - **P4 (Low / Normal, < 25.0)**: Standard preventative health routine.
+ - **P1 (Critical, Risk > 75.0)**: Immediate pediatric referral, therapeutic feeding program, micronutrient supplementation.
+ - **P2 (High, 50.0 - 75.0)**: Bi-weekly Posyandu monitoring, intensive dietary counseling, sanitation review.
+ - **P3 (Moderate, 25.0 - 50.0)**: Monthly growth tracking, balanced nutritional food education.
+ - **P4 (Low / Normal, < 25.0)**: Standard preventative health routine.
 
 ---
 
